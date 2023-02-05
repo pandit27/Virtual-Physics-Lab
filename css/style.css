@@ -5,6 +5,8 @@ body {
 
 header {
   position: sticky;
+  display: flex;
+  align-items: center;
 }
 
 /* first section css */
