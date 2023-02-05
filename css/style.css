@@ -9,8 +9,7 @@ header {
   align-items: center;
 }
 
-/* first section css */
-.first-section-virtual {
-  height: 100vh;
-  width: 100vw;
+footer{
+  overflow: hidden;
+  height: fit-content;
 }
