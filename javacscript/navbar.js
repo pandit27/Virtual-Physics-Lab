@@ -4,6 +4,7 @@ const circuit_nav = document.querySelector(".circuit-simulation-nav");
 const resourses_nav = document.querySelector(".resources-nav");
 const about_nav = document.querySelector(".about-nav");
 
+// adding event listeners
 home_nav.addEventListener("click", () => {
   location.href = "index.html";
 });
