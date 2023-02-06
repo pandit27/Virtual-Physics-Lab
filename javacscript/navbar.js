@@ -1,3 +1,4 @@
+// variable declaration
 const home_nav = document.querySelector(".home-nav");
 const circuit_nav = document.querySelector(".circuit-simulation-nav");
 const resourses_nav = document.querySelector(".resources-nav");
@@ -16,12 +17,11 @@ about_nav.addEventListener("click", () => {
 });
 
 resourses_nav.addEventListener("click", () => {
-  location.href = "src/reviews.html";
+  location.href = "src/resources-nav.html";
 });
 
-
 about_nav = document.addEventListener("click", () => {
-    about_nav.addEventListener("hover", () => {
-        location.reload();
-    })
-})
+  about_nav.addEventListener("hover", () => {
+    location.reload();
+  });
+});
