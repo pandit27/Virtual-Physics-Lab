@@ -1,0 +1,18 @@
+/* first-section css */
+.first-section-virtual {
+  background-color: pink;
+  background: url("https://cdn.pixabay.com/photo/2021/11/14/20/08/background-6795626_960_720.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: auto;
+}
+
+.my-bg-1 {
+  background-color: #061e35;
+}
+
+.my-h2-c-1 {
+  font-weight: 100;
+  color: #46deff;
+}

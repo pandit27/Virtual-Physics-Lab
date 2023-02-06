@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Physics Lab</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- first-section css -->
+    <link rel="stylesheet" href="css/first-section.css">
+    <!-- tutorial-section css -->
+    <link rel="stylesheet" href="css/tutorial-section.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2021/07/20/12/10/atom-6480540__340.ico"
+        type="image/x-icon">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="h-auto my-auto fle header-virtual text-gray-50 bg-black body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="https://cdn.pixabay.com/photo/2021/07/20/12/10/atom-6480540__340.jpg" alt="image"
+                    class="w-15 h-16 text-white p-2 rounded-full cursor-pointer">
+                <span class="ml-3 text-gray-50 cursor-pointer text-xl">Virtual Physics Lab</span>
+            </a>
+            <nav
+                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 text-xl hover:text-blue-400 cursor-pointer home-nav">Home</a>
+                <a class="mr-5 text-xl hover:text-blue-400 cursor-pointer circuit-simulation-nav">Circuit Simulation</a>
+                <a class="mr-5 text-xl hover:text-blue-400 cursor-pointer resources-nav">Resources</a>
+                <a class="mr-5 text-xl hover:text-blue-400 cursor-pointer about-nav">About</a>
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm ml-9 mt-1 px-5 py-2.5 mr-2 mb-2 my-login-button">Login</button>
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm mt-1 px-5 py-2.5 mr-2 mb-2 my-signup-button
+                    '">Sign
+                    Up</button>
+            </nav>
+            <!-- search bar -->
+            <form>
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
+                        <input type="search" id="default-search"
+                            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search" required>
+                        <button type="submit"
+                            class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!-- first section -->
+    <section class="text-gray-600 body-font first-section-virtual">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20 flex-col items-center justify-center">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                    <h1 class="sm:text-3xl text-4xl font-medium title-font mb-2 text-gray-50">Physics Simulation Made
+                        Easy</h1>
+                    <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+                </div>
+                <p class="lg:w-1/2 w-full leading-relaxed text-gray-50">This Virtual Lab provides powerful feature to
+                    perform different physical experiments virtually and calculate the result efficiently.</p>
+            </div>
+            <div class="flex flex-wrap -m-4 justify-center">
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div
+                        class="my-bg-1 p-6 rounded-lg flex flex-wrap w-full mb-20 flex-col items-center justify-center">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="https://dummyimage.com/720x400" alt="content">
+                        <h2 class="my-h2-c-1 text-lg title-font mb-4 my-h2-c-1">Chichen Itza</h2>
+                        <p class="leading-relaxed text-base text-gray-50">Fingerstache flexitarian street art 8-bit
+                            waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div
+                        class="my-bg-1 p-6 rounded-lg flex flex-wrap w-full mb-20 flex-col items-center justify-center">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="https://dummyimage.com/721x401" alt="content">
+                        <h2 class="my-h2-c-1 text-lg title-font mb-4 my-h2-c-1">Colosseum Roma</h2>
+                        <p class="leading-relaxed text-base text-gray-50">Fingerstache flexitarian street art 8-bit
+                            waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4 flex items-center justify-center">
+                    <div
+                        class="my-bg-1 p-6 rounded-lg flex flex-wrap w-full mb-20 flex-col items-center justify-center">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="https://dummyimage.com/722x402" alt="content">
+                        <h2 class="my-h2-c-1 text-lg title-font mb-4">Great Pyramid of Giza</h2>
+                        <p class="leading-relaxed text-base text-gray-50">Fingerstache flexitarian street art 8-bit
+                            waistcoat.
+                            Distillery hexagon disrupt edison bulbche.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- tutorial section -->
+    <section class="text-gray-600 body-font">
+        <p class="text-gray-900 flex justify-center items-center text-xl">Tutorials</p>
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/yM-dEZKYteQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+                        <p class="mt-1">$16.00</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/yM-dEZKYteQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+                        <p class="mt-1">$21.15</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/yM-dEZKYteQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+                        <p class="mt-1">$12.00</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/yM-dEZKYteQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+                        <p class="mt-1">$18.40</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/yM-dEZKYteQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+                        <p class="mt-1">$16.00</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/yM-dEZKYteQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+                        <p class="mt-1">$21.15</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/yM-dEZKYteQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+                        <p class="mt-1">$12.00</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/yM-dEZKYteQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+                        <p class="mt-1">$18.40</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- information section -->
+    <!-- section 1 -->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+                    <br class="hidden lg:inline-block">readymade gluten
+                </h1>
+                <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+                    plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
+                    authentic tumeric truffaut hexagon try-hard chambray.</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                    <button
+                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            </div>
+        </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+                    <br class="hidden lg:inline-block">readymade gluten
+                </h1>
+                <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+                    plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
+                    authentic tumeric truffaut hexagon try-hard chambray.</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                    <button
+                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+                    <br class="hidden lg:inline-block">readymade gluten
+                </h1>
+                <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+                    plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
+                    authentic tumeric truffaut hexagon try-hard chambray.</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                    <button
+                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer class="text-gray-50 body-font bg-gray-900">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap md:text-left text-center order-first">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-50 tracking-widest text-xl mb-3">Contact Us</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            Computer Science Department,
+                        </li>
+                        <li>
+                            ANDC University of Delhi,
+                        </li>
+                        <li>
+                            New Delhi, India
+                        </li>
+                        <li class="flex items-center gap-2 mt-1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3247/3247310.png" alt="phone icon"
+                                class=" w-5 h-5 opacity-50">
+                            +91 9153041728
+                        </li>
+                        <li class="flex items-center gap-2 mt-1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/873/873360.png" alt="mail icon"
+                                class="w-5 h-5 opacity-50">
+                            priyanshujha131@gmail.com
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-50 tracking-widest text-xl mb-3">About</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a href="#" class="hover:text-gray-400 cursor-pointer">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-gray-400 cursor-pointer">Terms and Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-gray-400 cursor-pointer">Our Team</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-gray-400 cursor-pointer">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-gray-400 cursor-pointer">Contact Us</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 m-0">
+                    <h2 class="title-font font-medium text-gray-50 tracking-widest text-xl mb-3">Resources</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-50 hover:text-gray-400 cursor-pointer">Resources</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-50 hover:text-gray-400 cursor-pointer">Tutorials</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-50 hover:text-gray-400 cursor-pointer">Documentation</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-50 hover:text-gray-400 cursor-pointer">Blogs</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-50 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+                    <div
+                        class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                        <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                            <label for="footer-field" class="leading-7 text-sm text-gray-50">Your Email</label>
+                            <input type="text" id="footer-field" name="footer-field"
+                                class="w-full bg-gray-50 bg-opacity-100 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-blue-200 focus:border-blue-500 text-base outline-none text-gray-50 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <button
+                            class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Subscribe</button>
+                    </div>
+                    <p class="text-gray-50 text-sm mt-2 md:text-left text-center">We will not use your private data
+                        <br class="lg:block hidden">We respect your privacy
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark text-gray-50">
+            <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <img src="https://cdn.pixabay.com/photo/2021/07/20/12/10/atom-6480540__340.jpg" alt="image"
+                        class="w-15 h-16 text-white p-2 roundedF-full cursor-pointer">
+                    <span class="ml-3 text-xl text-gray-50">Virtual Physics Lab</span>
+                </a>
+                <p class="text-sm text-gray-50 sm:ml-6 sm:mt-0 mt-4">© 2023 Virtual Physics Lab —
+                    @ANDC
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a href="www.facebook.com" class="text-gray-50">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="www.twitter.com" class="ml-3 text-gray-50">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="www.instagram.com" class="ml-3 text-gray-50">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a href="www.linkedin.com" class="ml-3 text-gray-50">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- login and signup js -->
+    <script src="javacscript/login-button.js"></script>
+</body>
+
+</html>

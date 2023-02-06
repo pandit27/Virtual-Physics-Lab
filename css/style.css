@@ -1,0 +1,15 @@
+body {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
+header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  overflow: hidden;
+  height: fit-content;
+}
