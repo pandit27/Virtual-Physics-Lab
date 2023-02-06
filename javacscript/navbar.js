@@ -1,3 +1,4 @@
+// variable declaration
 const home_nav = document.querySelector(".home-nav");
 const circuit_nav = document.querySelector(".circuit-simulation-nav");
 const resourses_nav = document.querySelector(".resources-nav");
