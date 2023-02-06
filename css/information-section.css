@@ -1,3 +1,8 @@
-.information-section-virtual{
-    background-color: #09233c;
+.information-section-virtual {
+  background-color: #09233c;
+}
+
+.information-heading {
+  color: #46deff;
+  font-weight: 200;
 }
