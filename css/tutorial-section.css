@@ -1,4 +1,4 @@
 /* tutorial-section css */
 .tutorial-section {
-  background-color: #09233c;
+  background: linear-gradient(to right, #1c79b3 0%, #33adc7 51%, #1c79b3 100%);
 }
