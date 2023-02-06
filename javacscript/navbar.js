@@ -10,7 +10,7 @@ home_nav.addEventListener("click", () => {
 });
 
 circuit_nav.addEventListener("click", () => {
-  location.href = "src/circuit-nav.html";
+  location.href = "circuit/circuit-nav.html";
 });
 
 about_nav.addEventListener("click", () => {
