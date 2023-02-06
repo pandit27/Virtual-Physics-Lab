@@ -5,7 +5,7 @@ const resourses_nav = document.querySelector(".resources-nav");
 const about_nav = document.querySelector(".about-nav");
 
 home_nav.addEventListener("click", () => {
-  location.href = "src/home-nav.html";
+  location.href = "index.html";
 });
 
 circuit_nav.addEventListener("click", () => {
@@ -17,12 +17,11 @@ about_nav.addEventListener("click", () => {
 });
 
 resourses_nav.addEventListener("click", () => {
-  location.href = "src/reviews.html";
+  location.href = "src/resources-nav.html";
 });
 
-
 about_nav = document.addEventListener("click", () => {
-    about_nav.addEventListener("hover", () => {
-        location.reload();
-    })
-})
+  about_nav.addEventListener("hover", () => {
+    location.reload();
+  });
+});
