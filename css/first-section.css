@@ -16,3 +16,21 @@
   font-weight: 100;
   color: #46deff;
 }
+
+.first-section-button {
+  background-image: linear-gradient(
+    to right,
+    #1c79b3 0%,
+    #33adc7 51%,
+    #1c79b3 100%
+  );
+}
+
+.first-section-button:hover {
+  background-image: linear-gradient(
+    to right,
+    #1c79b3 0%,
+    #33adc7 80%,
+    #1c79b3 100%
+  );
+}
