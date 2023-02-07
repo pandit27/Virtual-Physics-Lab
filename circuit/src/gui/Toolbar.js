@@ -69,11 +69,11 @@ example.Toolbar = Class.extend({
       )
       .button("option", "disabled", true);
     this.nodeGenerate = $(
-      "<button type='button' class='show btn-primary btn-lg px-3 '  aria-haspopup='true' onClick='nodeGenerate()' >Generate Node No.</button>"
+      // "<button type='button' class='show btn-primary btn-lg px-3 '  aria-haspopup='true' onClick='nodeGenerate()' >Generate Node No.</button>"
     );
     $(".tool").append(this.nodeGenerate);
     this.submitButton = $(
-      "<button type='button' class='show btn-primary btn-lg px-3'  aria-haspopup='true' onClick='simulate()' ><img src='.././css/icons/play.png' alt='play' /> Simulate</button>"
+      // "<button type='button' class='show btn-primary btn-lg px-3'  aria-haspopup='true' onClick='simulate()' ><img src='.././css/icons/play.png' alt='play' /> Simulate</button>"
     );
     $(".tool").append(this.submitButton);
   },
