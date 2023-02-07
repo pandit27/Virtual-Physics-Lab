@@ -10,7 +10,9 @@
 </head>
 
 <body class="w-full">
-	<header class="w-full">
+	<header class="w-full flex">
+		<button
+			class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded home-btn-ohms-law">Home</button>
 		<div class="container-ohms w-full">
 			<div class="page_title w-full">
 				<img class="image1" src="images/ohm_logo.png" width="50px">
@@ -51,7 +53,9 @@
 				<div class="result">
 					<p id="res">Result = .... </p>
 				</div>
-				<button id="clear_data" class="clear_button" title="Clear inputs data ">Reset</button>
+				<button id="clear_data"
+					class="clear_button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+					title="Clear inputs data ">Reset</button>
 			</div>
 		</section>
 
@@ -64,6 +68,7 @@
 	<footer>
 	</footer>
 
+	<script src="js/script.js"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="js/ohm_law_class.js"></script>
 	<script src="js/app.js"></script>
