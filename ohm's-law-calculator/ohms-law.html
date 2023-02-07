@@ -4,30 +4,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="Ohm Law APP">
-	<meta name="author" content="Khaled Fathi">
-	<meta name="email" content="khaledfathi@protonmail.com">
 	<meta name="viewport" content="width=device-width , initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="license" href="license/license.txt">
-	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="shortcut icon" href="images/ohm_logo.png" type="icon">
-	<style></style>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 
-<body>
-	<header>
-		<div class="container">
-			<div class="page_title">
-				<h1>Ohm Law APP</h1>
-				<p>Calculate and get Resistance , Voltage , Current and power </p>
+<body class="w-full">
+	<header class="w-full">
+		<div class="container-ohms w-full">
+			<div class="page_title w-full">
 				<img class="image1" src="images/ohm_logo.png" width="50px">
+				<div class="flex flex-col w-90">
+					<h1 class="flex justify-center">Ohm's Law Calculator</h1>
+					<p class="">Calculate and get Resistance , Voltage , Current and power </p>
+				</div>
 				<img class="image2" src="images/ohm_logo.png" width="50px">
 			</div>
 			<div class="title_image"></div>
 		</div>
 	</header>
-	<article>
-		<section class="container">
-			<div class="app_container">
+	<article class="flex flex-col items-center w-full">
+		<section class="container-ohms flex w-full items-center">
+			<div class="app_container flex flex-col items-center w-full">
 				<div class="selection">
 					<label>Get </label>
 					<select id="get_select">
@@ -65,6 +63,8 @@
 	</article>
 	<footer>
 	</footer>
+
+	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="js/ohm_law_class.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/others.js"></script>
