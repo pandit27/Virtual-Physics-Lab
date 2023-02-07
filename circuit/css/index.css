@@ -13,7 +13,7 @@ body {
 }
 .btn-green {
   background-color: #65ff8f !important;
-  width: 300px !important;
+  width: 300px;
   margin: 0 auto;
 }
 
