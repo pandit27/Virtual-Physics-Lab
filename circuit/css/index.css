@@ -1,5 +1,6 @@
 body {
   font-family: "PT Sans", sans-serif !important;
+  overflow-x: hidden;
 }
 
 .desc {
@@ -18,4 +19,11 @@ body {
 
 h4 {
   color: white;
+  font-weight: lighter;
+}
+
+.my-para-circuit {
+  color: white;
+  font-size: large;
+  font-weight: 100;
 }
