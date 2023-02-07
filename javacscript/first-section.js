@@ -11,7 +11,7 @@ circuit_simulator_fs.addEventListener("click", () => {
 });
 
 ohms_law_calculator_fs.addEventListener("click", () => {
-  location.href = "";
+  location.href = "ohm's-law-calculator/ohms-law.html";
 });
 
 documentation_fs.addEventListener("click", () => {
