@@ -1,4 +1,11 @@
 /* tutorial-section css */
 .tutorial-section {
+  width: 100vw;
+  background: linear-gradient(to right, #1c79b3 0%, #33adc7 51%, #1c79b3 100%);
+}
+
+.tutorial-para{
+  width: 100vw;
+  text-align: center;
   background: linear-gradient(to right, #1c79b3 0%, #33adc7 51%, #1c79b3 100%);
 }
