@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Ohm Law APP">
+	<meta name="author" content="Khaled Fathi">
+	<meta name="email" content="khaledfathi@protonmail.com">
+	<meta name="viewport" content="width=device-width , initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="license" href="license/license.txt">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="shortcut icon" href="images/ohm_logo.png" type="icon">
+	<style></style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="page_title">
+				<h1>Ohm Law APP</h1>
+				<p>Calculate and get Resistance , Voltage , Current and power </p>
+				<img class="image1" src="images/ohm_logo.png" width="50px">
+				<img class="image2" src="images/ohm_logo.png" width="50px">
+			</div>
+			<div class="title_image"></div>
+		</div>
+	</header>
+	<article>
+		<section class="container">
+			<div class="app_container">
+				<div class="selection">
+					<label>Get </label>
+					<select id="get_select">
+						<option selected hidden></option>
+						<option>Resistance</option>
+						<option>Voltage</option>
+						<option>Current</option>
+						<option>Power</option>
+					</select>
+					<label>Calculte by </label>
+					<select id="type_select">
+					</select>
+				</div>
+				<div class="app_body">
+					<label id="input_a_label" place>- - - - - -</label>
+					<input id="input_a" type="text" disabled>
+					<label id="input_b_label">- - - - - -</label>
+					<input id="input_b" type="text" disabled>
+				</div>
+				<div class="logo">
+					<img id="electronic_logo" width=80>
+				</div>
+				<div class="result">
+					<p id="res">Result = .... </p>
+				</div>
+				<button id="clear_data" class="clear_button" title="Clear inputs data ">Reset</button>
+			</div>
+		</section>
+
+		<section class="information_container">
+			<hr>
+			<h2>The Law</h2>
+			<img src="images/ohm_law.png" width="600px">
+		</section>
+	</article>
+	<footer>
+	</footer>
+	<script src="js/ohm_law_class.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/others.js"></script>
+</body>
+
+</html>
