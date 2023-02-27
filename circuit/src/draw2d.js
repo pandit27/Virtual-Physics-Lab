@@ -1,3 +1,24 @@
+// ```
+// NOTE: This code is taken from draw2d.js. You can download from their site. The only change that
+// 	  i made is that i added the functionality of automatic creation of label once two elements
+// 	  are connected.
+
+// 	  Added Code:(Lines 8647 to 8657)
+// 	  /// code starts
+// 	  	this.label = new draw2d.shape.basic.Label({
+// 			text: "node",
+// 			color: "#0d0d0d",
+//       		fontColor: "#0d0d0d",
+// 	  	});
+
+// 		this.add(
+// 			this.label,
+// 				new draw2d.layout.locator.ManhattanMidpointLocator()
+// 	  		);
+// 		this.label.installEditor(new draw2d.ui.LabelInplaceEditor());
+// 	  /// code ends
+
+// ```
 var node = 0;
 
 (function webpackUniversalModuleDefinition(root, factory) {
