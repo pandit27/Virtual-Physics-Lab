@@ -1,40 +1,45 @@
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-	background-color: #333;
-	color: #fff;
-	padding: 1em;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
 }
 
 nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 main {
-	padding: 1em;
+  padding: 1em;
 }
 
 section {
-	margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 #hero {
-	background-image: url("images/hero-bg.jpg");
-	background-size
+  background-image: url("images/hero-bg.jpg");
+  /* background-size */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 4em 0;
 }
