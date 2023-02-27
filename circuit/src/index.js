@@ -935,15 +935,15 @@ function nodeGenerate() {
       if (resistor_list[i].node_k > nodes) {
         return alert(
           "The " +
-            resistor_list[i].label +
-            " ohms resistor's node_high is not valid"
+          resistor_list[i].label +
+          " ohms resistor's node_high is not valid"
         );
       }
       if (resistor_list[i].node_l > nodes) {
         return alert(
           "The " +
-            resistor_list[i].label +
-            " ohms resistor's node_low is not valid"
+          resistor_list[i].label +
+          " ohms resistor's node_low is not valid"
         );
       }
     }
@@ -957,15 +957,15 @@ function nodeGenerate() {
       if (curr_src_list[i].node_k > nodes) {
         return alert(
           "The " +
-            curr_src_list[i].label +
-            " ampere resistor's node_high is not valid"
+          curr_src_list[i].label +
+          " ampere resistor's node_high is not valid"
         );
       }
       if (curr_src_list[i].node_l > nodes) {
         return alert(
           "The " +
-            curr_src_list[i].label +
-            " ampere resistor's node_low is not valid"
+          curr_src_list[i].label +
+          " ampere resistor's node_low is not valid"
         );
       }
     }
@@ -978,15 +978,15 @@ function nodeGenerate() {
       if (volt_src_list[i].node_k > nodes) {
         return alert(
           "The " +
-            volt_src_list[i].label +
-            " volts resistor's node_high is not valid"
+          volt_src_list[i].label +
+          " volts resistor's node_high is not valid"
         );
       }
       if (volt_src_list[i].node_l > nodes) {
         return alert(
           "The " +
-            volt_src_list[i].label +
-            " volts resistor's node_low is not valid"
+          volt_src_list[i].label +
+          " volts resistor's node_low is not valid"
         );
       }
     }
