@@ -142,3 +142,7 @@ footer p {
     flex-direction: column;
   }
 }
+
+.feature, .member {
+	width: 100%;
+}
