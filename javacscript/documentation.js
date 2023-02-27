@@ -1,1 +1,2 @@
-const button = document.querySelector('#documentation-first-section')
+const button = document.querySelector('#documentation-first-section');
+
