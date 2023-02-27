@@ -1,0 +1,24 @@
+{
+  "name": "virtual-physics-lab",
+  "version": "1.0.0",
+  "description": "This is a virtual physics lab",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstroDeveloper1010/Virtual-Physics-Lab.git"
+  },
+  "keywords": [
+    "Virtual",
+    "Physics",
+    "Lab"
+  ],
+  "author": "Priyanshu Jha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AstroDeveloper1010/Virtual-Physics-Lab/issues"
+  },
+  "homepage": "https://github.com/AstroDeveloper1010/Virtual-Physics-Lab#readme"
+}
