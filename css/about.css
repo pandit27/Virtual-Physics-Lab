@@ -143,6 +143,7 @@ footer p {
   }
 }
 
-.feature, .member {
-	width: 100%;
+.feature,
+.member {
+  width: 100%;
 }
