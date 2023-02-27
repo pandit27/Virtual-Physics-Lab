@@ -28,6 +28,12 @@
   <script src="../src/gui/Application.js"></script>
   <script src="../src/gui/View.js"></script>
   <script src="../src/gui/Toolbar.js"></script>
+  <style>
+    .component_div {
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+  </style>
 </head>
 
 <body id="container">
@@ -61,7 +67,7 @@
     <div id="toolbar" class="navbar sticky-top navbar-expand-lg navbar-dark"></div>
 
     <div id="canvas" draggable="true" style="width: 3000px; height: 3000px"></div>
-    <div id="navigation" class="">
+    <div id="navigation" class="component_div">
       <h4 style="padding-top: 10%">COMPONENTS</h4>
       <div data-shape="Resistor" draggable="true" class="palette_node_element draw2d_droppable">
         Resistor
