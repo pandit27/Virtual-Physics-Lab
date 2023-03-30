@@ -1,9 +1,11 @@
 # Virtual-Physics-Lab
+
 This is a virtual physics simulation web app made by using javascript and Draw2d.js.
 
 Our site is live at https://andc-lab.netlify.app/
 
 # Contributors :-
+
 <ol>
 <li>Nikhil Kumar</li>
 <li>Vipin Kumar</li>
@@ -11,6 +13,7 @@ Our site is live at https://andc-lab.netlify.app/
 </ol>
 
 # Tools used :-
+
 <ol>
 <li>Html, css, javascript</li>
 <li>Draw 2d</li>
