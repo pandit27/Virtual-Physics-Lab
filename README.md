@@ -14,7 +14,7 @@ Our site is live at https://andc-lab.netlify.app/
 <ol>
 <li>Html, css, javascript</li>
 <li>Draw 2d</li>
-<li>React.js</li>
+<!-- <li>React.js</li> -->
 <li>Tailwind CSS</li>
 <li>Node js</li>
 </ol>
