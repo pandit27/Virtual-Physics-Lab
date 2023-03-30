@@ -18,5 +18,9 @@ footer {
   .myHeader {
     display: block;
   }
-  
+
+  .nav-title{
+    color: pink;
+    background-color: blue;
+  }
 }
