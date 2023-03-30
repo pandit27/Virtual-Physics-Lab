@@ -1,8 +1,4 @@
 const express = require('express');
-const connectDB = require('./config/db');
-const authRoutes = require('./routes/auth');
-const { requireAuth } = require('./middlewares/auth');
-
 const app = express();
 
 const port = 4000;
