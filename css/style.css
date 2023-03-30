@@ -23,4 +23,8 @@ footer {
     color: pink;
     background-color: blue;
   }
+
+  .myForm{
+    display: none;
+  }
 }
