@@ -19,12 +19,12 @@ footer {
     display: block;
   }
 
-  .nav-title{
+  .nav-title {
     color: pink;
     background-color: blue;
   }
 
-  .myForm{
+  .myForm {
     display: none;
   }
 }
