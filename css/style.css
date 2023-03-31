@@ -32,10 +32,10 @@ footer {
 /* ---------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   .nav-content {
-      display: none;
+    display: none;
   }
   .nav-toggle {
-      display: block;
+    display: block;
   }
 }
 
