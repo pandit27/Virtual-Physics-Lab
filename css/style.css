@@ -30,3 +30,79 @@ footer {
 }
 
 /* ---------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  .nav-content {
+      display: none;
+  }
+  .nav-toggle {
+      display: block;
+  }
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-toggle input {
+  display: none;
+}
+
+.nav-toggle span {
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin-bottom: 6px;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-toggle span:first-child {
+  transform-origin: left center;
+}
+
+.nav-toggle span:last-child {
+  transform-origin: left center;
+}
+
+.nav-toggle input:checked ~ .nav-content {
+  display: block;
+}
+
+.nav-toggle input:checked ~ span:first-child {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.nav-toggle input:checked ~ span:last-child {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.nav-toggle input:checked ~ span:nth-child(2) {
+  transform: scale(0);
+}
+
+.header-virtual {
+  position: relative;
+}
+
+.nav-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-content a {
+  color: white;
+  margin: 10px 0;
+}
