@@ -1,0 +1,1 @@
+This Virtual Physics Lab is made for the software engineering project under the guidance of Dr. Vibha Gaur Acharya Narendra Dev College, University of Delhi.
