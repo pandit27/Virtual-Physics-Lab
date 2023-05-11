@@ -23,6 +23,8 @@ Our site is live at https://andc-lab.netlify.app/
 </ol>
 <h3>Project Completed 👍</h3>
 
+<br>
+
 <center><h2>ACHARYA NARENDRA DEV COLLEGE</h2></center>
 <center><h2>(University of Delhi)</h2></center>
 <br>
@@ -36,5 +38,7 @@ completed the project <strong>“Virtual Electronics Lab”</strong> during Seme
 <center>Priyanshu Nikhil Kumar Vipin Kumar</center>
 <br>
 <center>Supervisor<center>
+  <br>
 <center>Dr. Vibha Gaur, Professor</center>
+  <br>
 <center>Department of Computer Science</center>
