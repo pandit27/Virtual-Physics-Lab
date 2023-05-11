@@ -27,7 +27,7 @@ Our site is live at https://andc-lab.netlify.app/
 
 <center><h2>ACHARYA NARENDRA DEV COLLEGE</h2></center>
 <center><h2>(University of Delhi)</h2></center>
-<br>
+
 <center><h2>CERTIFICATE</h2></center>
 <br>
 <p>This is to certify that <strong>Priyanshu, Nikhil Kumar</strong> and <strong>Vipin Kumar</strong> of Bachelor of Science (Hons)
