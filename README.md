@@ -21,5 +21,20 @@ Our site is live at https://andc-lab.netlify.app/
 <li>Tailwind CSS</li>
 <li>Node js</li>
 </ol>
-
 <h3>Project Completed 👍</h3>
+
+<center><h2>ACHARYA NARENDRA DEV COLLEGE</h2></center>
+<center><h2>(University of Delhi)</h2></center>
+<br>
+<center><h2>CERTIFICATE</h2></center>
+<br>
+<p>This is to certify that <strong>Priyanshu, Nikhil Kumar</strong> and <strong>Vipin Kumar</strong> of Bachelor of Science (Hons)
+Computer Science from Acharya Narendra Dev College, University of Delhi, have successfully
+completed the project <strong>“Virtual Electronics Lab”</strong> during Semester IV under the supervision of Prof.
+<strong>Vibha Gaur</strong>.</p>
+  <br>
+<center>Priyanshu Nikhil Kumar Vipin Kumar</center>
+<br>
+<center>Supervisor<center>
+<center>Dr. Vibha Gaur, Professor</center>
+<center>Department of Computer Science</center>
