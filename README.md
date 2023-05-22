@@ -4,7 +4,40 @@ This is a virtual physics simulation web app made by using javascript and Draw2d
 
 Our site is live at https://andc-lab.netlify.app/
 
-# Contributors :-
+# 🎯 Problem Statement :-
+
+<p>Our goal is to create a Virtual Physics Lab Software that offers an engaging and authentic simulation environment for students to conduct physics experiments. The platform should incorporate realistic physics simulations, interactive elements, and intuitive controls to provide an immersive learning experience. It should also include a wide range of experiments and measurements, as well as data analysis tools, to help students understand and apply fundamental physics principles. The goal is to design a user-friendly and feature-rich virtual physics lab that promotes active learning and facilitates the exploration of various physics concepts in a virtual setting.</p>
+
+# 🔧 Tech Stack Used :-
+
+<ol>
+<li><strong>MERN</strong></li>
+<li>Tailwind CSS => for designing the UI/UX</li>
+<li>React js => for creating the software (especilly circuit simulator)</li>
+<li>Node js => for creating a server for this software</li>
+<li>Express js => for doing all the stuff in backend</li>
+<li>MongoDB => for creating a database (if required)</li>
+</ol>
+
+
+# 💰 Cost Estimate :-
+
+Cost = Effort(pm) * Developer Charge(INR/pm)
+Cost = 8.62 * 25,000
+Cost = Rs 2,15,000
+
+#  🎬 Demo :-
+
+![Home_Page](output.png)
+
+# ⚡ Challenges Faced :-
+
+<ol>
+<li>Drag & Drop functionality of circuit simulator was the most difficult part of this project.</li>
+<li>Connecting the two components together in circuit simulator was a big challange for us.</li>
+</ol>
+
+# 👥 Contributors :-
 
 <ol>
 <li>Nikhil Kumar</li>
@@ -12,15 +45,6 @@ Our site is live at https://andc-lab.netlify.app/
 <li>Priyanshu Jha</li>
 </ol>
 
-# Tools used :-
-
-<ol>
-<li>Html, css, javascript</li>
-<li>Draw 2d</li>
-<!-- <li>React.js</li> -->
-<li>Tailwind CSS</li>
-<li>Node js</li>
-</ol>
 <h3>Project Completed 👍</h3>
 
 <br>
