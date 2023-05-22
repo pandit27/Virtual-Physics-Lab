@@ -10,8 +10,8 @@ Our site is live at https://andc-lab.netlify.app/
 
 # 🔧 Tech Stack Used :-
 
+<strong>MERN Stack</strong>
 <ol>
-<li><strong>MERN</strong></li>
 <li>Tailwind CSS => for designing the UI/UX</li>
 <li>React js => for creating the software (especilly circuit simulator)</li>
 <li>Node js => for creating a server for this software</li>
@@ -23,7 +23,9 @@ Our site is live at https://andc-lab.netlify.app/
 # 💰 Cost Estimate :-
 
 Cost = Effort(pm) * Developer Charge(INR/pm)
+<br>
 Cost = 8.62 * 25,000
+<br>
 Cost = Rs 2,15,000
 
 #  🎬 Demo :-
@@ -48,6 +50,8 @@ Cost = Rs 2,15,000
 <h3>Project Completed 👍</h3>
 
 <br>
+
+# 📃 Certificate :-
 
 <center><h2>ACHARYA NARENDRA DEV COLLEGE</h2></center>
 <center><h2>(University of Delhi)</h2></center>
