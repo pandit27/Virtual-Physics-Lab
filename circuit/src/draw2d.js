@@ -68,9 +68,9 @@ var node = 0;
     /******/ /******/ __webpack_require__.d = function (exports, name, getter) {
       /******/ if (!__webpack_require__.o(exports, name)) {
         /******/ Object.defineProperty(exports, name, {
-          enumerable: true,
-          get: getter,
-        });
+      enumerable: true,
+      get: getter,
+    });
         /******/
       }
       /******/
@@ -79,8 +79,8 @@ var node = 0;
     /******/ /******/ __webpack_require__.r = function (exports) {
       /******/ if (typeof Symbol !== "undefined" && Symbol.toStringTag) {
         /******/ Object.defineProperty(exports, Symbol.toStringTag, {
-          value: "Module",
-        });
+      value: "Module",
+    });
         /******/
       }
       /******/ Object.defineProperty(exports, "__esModule", { value: true });
@@ -103,9 +103,9 @@ var node = 0;
       /******/ var ns = Object.create(null);
       /******/ __webpack_require__.r(ns);
       /******/ Object.defineProperty(ns, "default", {
-        enumerable: true,
-        value: value,
-      });
+          enumerable: true,
+          value: value,
+        });
       /******/ if (mode & 2 && typeof value != "string")
         for (var key in value)
           __webpack_require__.d(
@@ -123,11 +123,11 @@ var node = 0;
       /******/ var getter =
         module && module.__esModule
           ? /******/ function getDefault() {
-              return module["default"];
-            }
+            return module["default"];
+          }
           : /******/ function getModuleExports() {
-              return module;
-            };
+            return module;
+          };
       /******/ __webpack_require__.d(getter, "a", getter);
       /******/ return getter;
       /******/
@@ -361,7 +361,7 @@ canvg(target, s)
             svg.FRAMERATE = 30;
             svg.MAX_VIRTUAL_PIXELS = 30000;
 
-            svg.log = function (msg) {};
+            svg.log = function (msg) { };
             if (svg.opts.log == true && typeof console != "undefined") {
               svg.log = function (msg) {
                 console.log(msg);
@@ -2082,7 +2082,7 @@ canvg(target, s)
                       while (!pp.isCommandOrEnd()) {
                         var newP = new svg.Point(
                           (pp.isRelativeCommand() ? pp.current.x : 0) +
-                            pp.getScalar(),
+                          pp.getScalar(),
                           pp.current.y
                         );
                         pp.addMarker(newP, pp.current);
@@ -2097,7 +2097,7 @@ canvg(target, s)
                         var newP = new svg.Point(
                           pp.current.x,
                           (pp.isRelativeCommand() ? pp.current.y : 0) +
-                            pp.getScalar()
+                          pp.getScalar()
                         );
                         pp.addMarker(newP, pp.current);
                         pp.current = newP;
@@ -2218,9 +2218,9 @@ canvg(target, s)
                         // x1', y1'
                         var currp = new svg.Point(
                           (Math.cos(xAxisRotation) * (curr.x - cp.x)) / 2.0 +
-                            (Math.sin(xAxisRotation) * (curr.y - cp.y)) / 2.0,
+                          (Math.sin(xAxisRotation) * (curr.y - cp.y)) / 2.0,
                           (-Math.sin(xAxisRotation) * (curr.x - cp.x)) / 2.0 +
-                            (Math.cos(xAxisRotation) * (curr.y - cp.y)) / 2.0
+                          (Math.cos(xAxisRotation) * (curr.y - cp.y)) / 2.0
                         );
                         // adjust radii
                         var l =
@@ -2237,8 +2237,8 @@ canvg(target, s)
                             (Math.pow(rx, 2) * Math.pow(ry, 2) -
                               Math.pow(rx, 2) * Math.pow(currp.y, 2) -
                               Math.pow(ry, 2) * Math.pow(currp.x, 2)) /
-                              (Math.pow(rx, 2) * Math.pow(currp.y, 2) +
-                                Math.pow(ry, 2) * Math.pow(currp.x, 2))
+                            (Math.pow(rx, 2) * Math.pow(currp.y, 2) +
+                              Math.pow(ry, 2) * Math.pow(currp.x, 2))
                           );
                         if (isNaN(s)) s = 0;
                         var cpp = new svg.Point(
@@ -2248,11 +2248,11 @@ canvg(target, s)
                         // cx, cy
                         var centp = new svg.Point(
                           (curr.x + cp.x) / 2.0 +
-                            Math.cos(xAxisRotation) * cpp.x -
-                            Math.sin(xAxisRotation) * cpp.y,
+                          Math.cos(xAxisRotation) * cpp.x -
+                          Math.sin(xAxisRotation) * cpp.y,
                           (curr.y + cp.y) / 2.0 +
-                            Math.sin(xAxisRotation) * cpp.x +
-                            Math.cos(xAxisRotation) * cpp.y
+                          Math.sin(xAxisRotation) * cpp.x +
+                          Math.cos(xAxisRotation) * cpp.y
                         );
                         // vector magnitude
                         var m = function (v) {
@@ -2698,7 +2698,7 @@ canvg(target, s)
                 var r =
                   this.gradientUnits() == "objectBoundingBox"
                     ? ((bb.width() + bb.height()) / 2.0) *
-                      this.attribute("r").numValue()
+                    this.attribute("r").numValue()
                     : this.attribute("r").toPixels();
 
                 return ctx.createRadialGradient(fx, fy, 0, cx, cy, r);
@@ -2771,7 +2771,7 @@ canvg(target, s)
                     this.duration = 0.0;
                   } else if (
                     this.attribute("fill").valueOrDefault("remove") ==
-                      "freeze" &&
+                    "freeze" &&
                     !this.frozen
                   ) {
                     this.frozen = true;
@@ -2779,7 +2779,7 @@ canvg(target, s)
                     this.parent.animationFrozenValue = this.getProperty().value;
                   } else if (
                     this.attribute("fill").valueOrDefault("remove") ==
-                      "remove" &&
+                    "remove" &&
                     !this.removed
                   ) {
                     this.removed = true;
@@ -3009,8 +3009,8 @@ canvg(target, s)
                   x,
                   y - fontSize,
                   x +
-                    Math.floor((fontSize * 2.0) / 3.0) *
-                      this.children[0].getText().length,
+                  Math.floor((fontSize * 2.0) / 3.0) *
+                  this.children[0].getText().length,
                   y
                 );
               };
@@ -3611,10 +3611,10 @@ canvg(target, s)
 
               this.apply = function (ctx) {
                 var oldBeginPath = CanvasRenderingContext2D.prototype.beginPath;
-                CanvasRenderingContext2D.prototype.beginPath = function () {};
+                CanvasRenderingContext2D.prototype.beginPath = function () { };
 
                 var oldClosePath = CanvasRenderingContext2D.prototype.closePath;
-                CanvasRenderingContext2D.prototype.closePath = function () {};
+                CanvasRenderingContext2D.prototype.closePath = function () { };
 
                 oldBeginPath.call(ctx);
                 for (var i = 0; i < this.children.length; i++) {
@@ -3741,7 +3741,7 @@ canvg(target, s)
 
               var matrix = svg.ToNumberArray(this.attribute("values").value);
               switch (
-                this.attribute("type").valueOrDefault("matrix") // http://www.w3.org/TR/SVG/filters.html#feColorMatrixElement
+              this.attribute("type").valueOrDefault("matrix") // http://www.w3.org/TR/SVG/filters.html#feColorMatrixElement
               ) {
                 case "saturate":
                   var s = matrix[0];
@@ -3938,11 +3938,11 @@ canvg(target, s)
             svg.Element.feGaussianBlur.prototype = new svg.Element.ElementBase();
 
             // title element, do nothing
-            svg.Element.title = function (node) {};
+            svg.Element.title = function (node) { };
             svg.Element.title.prototype = new svg.Element.ElementBase();
 
             // desc element, do nothing
-            svg.Element.desc = function (node) {};
+            svg.Element.desc = function (node) { };
             svg.Element.desc.prototype = new svg.Element.ElementBase();
 
             svg.Element.MISSING = function (node) {
@@ -4254,8 +4254,8 @@ canvg(target, s)
         /*! no static exports found */
         /***/ function (module, exports) {
           /*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
 */
           // css base code, injected by the css-loader
           module.exports = function (useSourceMap) {
@@ -4386,8 +4386,8 @@ canvg(target, s)
         /*! no static exports found */
         /***/ function (module, exports) {
           /*
-	Based on rgbcolor.js by Stoyan Stefanov <sstoo@gmail.com>
-	http://www.phpied.com/rgb-color-parser-in-javascript/
+  Based on rgbcolor.js by Stoyan Stefanov <sstoo@gmail.com>
+  http://www.phpied.com/rgb-color-parser-in-javascript/
 */
 
           module.exports = function (color_string) {
@@ -4630,8 +4630,8 @@ canvg(target, s)
               this.alpha < 0
                 ? 0
                 : this.alpha > 1.0 || isNaN(this.alpha)
-                ? 1.0
-                : this.alpha;
+                  ? 1.0
+                  : this.alpha;
 
             // some getters
             this.toRGB = function () {
@@ -4693,16 +4693,16 @@ canvg(target, s)
                   example_div.appendChild(document.createTextNode("test"));
                   var list_item_value = document.createTextNode(
                     " " +
-                      examples[i] +
-                      " -> " +
-                      list_color.toRGB() +
-                      " -> " +
-                      list_color.toHex()
+                    examples[i] +
+                    " -> " +
+                    list_color.toRGB() +
+                    " -> " +
+                    list_color.toHex()
                   );
                   list_item.appendChild(example_div);
                   list_item.appendChild(list_item_value);
                   xml.appendChild(list_item);
-                } catch (e) {}
+                } catch (e) { }
               }
               return xml;
             };
@@ -4718,8 +4718,8 @@ canvg(target, s)
         /*! no static exports found */
         /***/ function (module, exports) {
           /*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
 */
           module.exports = function (src) {
             function log(error) {
@@ -4788,11 +4788,11 @@ canvg(target, s)
                   var n =
                     t && t.__esModule
                       ? function () {
-                          return t.default;
-                        }
+                        return t.default;
+                      }
                       : function () {
-                          return t;
-                        };
+                        return t;
+                      };
                   return e.d(n, "a", n), n;
                 }),
                 (e.o = function (t, e) {
@@ -4820,9 +4820,9 @@ canvg(target, s)
                   }
                   function o() {
                     var t =
-                        arguments.length > 0 && void 0 !== arguments[0]
-                          ? arguments[0]
-                          : {},
+                      arguments.length > 0 && void 0 !== arguments[0]
+                        ? arguments[0]
+                        : {},
                       e = new j(),
                       n = e.tween(t);
                     return (n.tweenable = e), n;
@@ -4830,33 +4830,33 @@ canvg(target, s)
                   Object.defineProperty(e, "__esModule", { value: !0 }),
                     (e.Tweenable = e.composeEasingObject = e.tweenProps = e.clone = e.each = void 0);
                   var u = (function () {
-                      function t(t, e) {
-                        for (var n = 0; n < e.length; n++) {
-                          var r = e[n];
-                          (r.enumerable = r.enumerable || !1),
-                            (r.configurable = !0),
-                            "value" in r && (r.writable = !0),
-                            Object.defineProperty(t, r.key, r);
-                        }
+                    function t(t, e) {
+                      for (var n = 0; n < e.length; n++) {
+                        var r = e[n];
+                        (r.enumerable = r.enumerable || !1),
+                          (r.configurable = !0),
+                          "value" in r && (r.writable = !0),
+                          Object.defineProperty(t, r.key, r);
                       }
-                      return function (e, n, r) {
-                        return n && t(e.prototype, n), r && t(e, r), e;
-                      };
-                    })(),
+                    }
+                    return function (e, n, r) {
+                      return n && t(e.prototype, n), r && t(e, r), e;
+                    };
+                  })(),
                     a =
                       "function" == typeof Symbol &&
-                      "symbol" == typeof Symbol.iterator
+                        "symbol" == typeof Symbol.iterator
                         ? function (t) {
-                            return typeof t;
-                          }
+                          return typeof t;
+                        }
                         : function (t) {
-                            return t &&
-                              "function" == typeof Symbol &&
-                              t.constructor === Symbol &&
-                              t !== Symbol.prototype
-                              ? "symbol"
-                              : typeof t;
-                          };
+                          return t &&
+                            "function" == typeof Symbol &&
+                            t.constructor === Symbol &&
+                            t !== Symbol.prototype
+                            ? "symbol"
+                            : typeof t;
+                        };
                   e.tween = o;
                   var c = n(5),
                     s = r(c),
@@ -4882,7 +4882,7 @@ canvg(target, s)
                       (d.mozCancelRequestAnimationFrame &&
                         d.mozRequestAnimationFrame) ||
                       setTimeout,
-                    v = function () {},
+                    v = function () { },
                     y = (e.each = function (t, e) {
                       return Object.keys(t).forEach(e);
                     }),
@@ -4906,28 +4906,28 @@ canvg(target, s)
                     }),
                     M = (e.composeEasingObject = function (t) {
                       var e =
-                          arguments.length > 1 && void 0 !== arguments[1]
-                            ? arguments[1]
-                            : "linear",
+                        arguments.length > 1 && void 0 !== arguments[1]
+                          ? arguments[1]
+                          : "linear",
                         n = {},
                         r = void 0 === e ? "undefined" : a(e);
                       return (
                         "string" === r || "function" === r
                           ? y(t, function (t) {
-                              return (n[t] = e);
-                            })
+                            return (n[t] = e);
+                          })
                           : y(t, function (t) {
-                              return (n[t] = n[t] || e[t] || "linear");
-                            }),
+                            return (n[t] = n[t] || e[t] || "linear");
+                          }),
                         n
                       );
                     }),
                     j = (e.Tweenable = (function () {
                       function t() {
                         var e =
-                            arguments.length > 0 && void 0 !== arguments[0]
-                              ? arguments[0]
-                              : {},
+                          arguments.length > 0 && void 0 !== arguments[0]
+                            ? arguments[0]
+                            : {},
                           n =
                             arguments.length > 1 && void 0 !== arguments[1]
                               ? arguments[1]
@@ -4971,12 +4971,12 @@ canvg(target, s)
                                 (l
                                   ? (a(c, this._attachment, p), this.stop(!0))
                                   : ((this._scheduleId = this._scheduleFunction.call(
-                                      d,
-                                      function () {
-                                        return n._timeoutHandler.apply(n, r);
-                                      },
-                                      1e3 / 60
-                                    )),
+                                    d,
+                                    function () {
+                                      return n._timeoutHandler.apply(n, r);
+                                    },
+                                    1e3 / 60
+                                  )),
                                     this._applyFilter("beforeTween"),
                                     h < s + o
                                       ? ((h = 1), (u = 1), (s = 1))
@@ -4998,10 +4998,10 @@ canvg(target, s)
                             key: "tween",
                             value: function () {
                               var e =
-                                  arguments.length > 0 &&
+                                arguments.length > 0 &&
                                   void 0 !== arguments[0]
-                                    ? arguments[0]
-                                    : void 0,
+                                  ? arguments[0]
+                                  : void 0,
                                 n = this._attachment,
                                 r = this._configured;
                               return this._isTweening
@@ -5018,7 +5018,7 @@ canvg(target, s)
                               var t = this,
                                 e =
                                   arguments.length > 0 &&
-                                  void 0 !== arguments[0]
+                                    void 0 !== arguments[0]
                                     ? arguments[0]
                                     : {};
                               (this._configured = !0),
@@ -5087,8 +5087,8 @@ canvg(target, s)
                             value: function () {
                               return (
                                 this._isPaused &&
-                                  (this._timestamp +=
-                                    t.now() - this._pausedAtTime),
+                                (this._timestamp +=
+                                  t.now() - this._pausedAtTime),
                                 (this._isPaused = !1),
                                 (this._isTweening = !0),
                                 this._timeoutHandler(),
@@ -5105,7 +5105,7 @@ canvg(target, s)
                                 ? this
                                 : ((this._timestamp = n - e),
                                   this.isPlaying() ||
-                                    ((this._isTweening = !0),
+                                  ((this._isTweening = !0),
                                     (this._isPaused = !1),
                                     this._timeoutHandler(n),
                                     this.pause()),
@@ -5116,9 +5116,9 @@ canvg(target, s)
                             key: "stop",
                             value: function () {
                               var t =
-                                  arguments.length > 0 &&
-                                  void 0 !== arguments[0] &&
-                                  arguments[0],
+                                arguments.length > 0 &&
+                                void 0 !== arguments[0] &&
+                                arguments[0],
                                 e = this._attachment,
                                 n = this._currentState,
                                 r = this._easing,
@@ -5212,7 +5212,7 @@ canvg(target, s)
                         r[t] = t;
                       }),
                       "abcdefghijklmnopqrst" ===
-                        Object.keys(Object.assign({}, r)).join("")
+                      Object.keys(Object.assign({}, r)).join("")
                     );
                   } catch (t) {
                     return !1;
@@ -5220,21 +5220,21 @@ canvg(target, s)
                 })()
                   ? Object.assign
                   : function (t, e) {
-                      for (
-                        var n, a, c = r(t), s = 1;
-                        s < arguments.length;
-                        s++
-                      ) {
-                        n = Object(arguments[s]);
-                        for (var f in n) o.call(n, f) && (c[f] = n[f]);
-                        if (i) {
-                          a = i(n);
-                          for (var h = 0; h < a.length; h++)
-                            u.call(n, a[h]) && (c[a[h]] = n[a[h]]);
-                        }
+                    for (
+                      var n, a, c = r(t), s = 1;
+                      s < arguments.length;
+                      s++
+                    ) {
+                      n = Object(arguments[s]);
+                      for (var f in n) o.call(n, f) && (c[f] = n[f]);
+                      if (i) {
+                        a = i(n);
+                        for (var h = 0; h < a.length; h++)
+                          u.call(n, a[h]) && (c[a[h]] = n[a[h]]);
                       }
-                      return c;
-                    };
+                    }
+                    return c;
+                  };
               },
               function (t, e, n) {
                 "use strict";
@@ -5271,7 +5271,7 @@ canvg(target, s)
                       }
                       if (((n = 0), (r = 1), (i = t) < n)) return n;
                       if (i > r) return r;
-                      for (; n < r; ) {
+                      for (; n < r;) {
                         if (((o = l(i)), m(o - t) < e)) return i;
                         t > o ? (n = i) : (r = i), (i = 0.5 * (r - n) + n);
                       }
@@ -5325,9 +5325,9 @@ canvg(target, s)
                 i._filterArgs = [];
                 e.interpolate = function (t, e, n, o) {
                   var u =
-                      arguments.length > 4 && void 0 !== arguments[4]
-                        ? arguments[4]
-                        : 0,
+                    arguments.length > 4 && void 0 !== arguments[4]
+                      ? arguments[4]
+                      : 0,
                     a = (0, r.clone)(t),
                     c = (0, r.composeEasingObject)(t, o);
                   i.set({}),
@@ -5343,18 +5343,18 @@ canvg(target, s)
                 var r,
                   i =
                     "function" == typeof Symbol &&
-                    "symbol" == typeof Symbol.iterator
+                      "symbol" == typeof Symbol.iterator
                       ? function (t) {
-                          return typeof t;
-                        }
+                        return typeof t;
+                      }
                       : function (t) {
-                          return t &&
-                            "function" == typeof Symbol &&
-                            t.constructor === Symbol &&
-                            t !== Symbol.prototype
-                            ? "symbol"
-                            : typeof t;
-                        };
+                        return t &&
+                          "function" == typeof Symbol &&
+                          t.constructor === Symbol &&
+                          t !== Symbol.prototype
+                          ? "symbol"
+                          : typeof t;
+                      };
                 r = (function () {
                   return this;
                 })();
@@ -5436,10 +5436,10 @@ canvg(target, s)
                     return 0 === t
                       ? 0
                       : 1 === t
-                      ? 1
-                      : (t /= 0.5) < 1
-                      ? 0.5 * Math.pow(2, 10 * (t - 1))
-                      : 0.5 * (2 - Math.pow(2, -10 * --t));
+                        ? 1
+                        : (t /= 0.5) < 1
+                          ? 0.5 * Math.pow(2, 10 * (t - 1))
+                          : 0.5 * (2 - Math.pow(2, -10 * --t));
                   }),
                   (e.easeInCirc = function (t) {
                     return -(Math.sqrt(1 - t * t) - 1);
@@ -5456,10 +5456,10 @@ canvg(target, s)
                     return t < 1 / 2.75
                       ? 7.5625 * t * t
                       : t < 2 / 2.75
-                      ? 7.5625 * (t -= 1.5 / 2.75) * t + 0.75
-                      : t < 2.5 / 2.75
-                      ? 7.5625 * (t -= 2.25 / 2.75) * t + 0.9375
-                      : 7.5625 * (t -= 2.625 / 2.75) * t + 0.984375;
+                        ? 7.5625 * (t -= 1.5 / 2.75) * t + 0.75
+                        : t < 2.5 / 2.75
+                          ? 7.5625 * (t -= 2.25 / 2.75) * t + 0.9375
+                          : 7.5625 * (t -= 2.625 / 2.75) * t + 0.984375;
                   }),
                   (e.easeInBack = function (t) {
                     var e = 1.70158;
@@ -5478,8 +5478,8 @@ canvg(target, s)
                   (e.elastic = function (t) {
                     return (
                       -1 *
-                        Math.pow(4, -8 * t) *
-                        Math.sin(((6 * t - 1) * (2 * Math.PI)) / 2) +
+                      Math.pow(4, -8 * t) *
+                      Math.sin(((6 * t - 1) * (2 * Math.PI)) / 2) +
                       1
                     );
                   }),
@@ -5501,19 +5501,19 @@ canvg(target, s)
                     return t < 1 / 2.75
                       ? 7.5625 * t * t
                       : t < 2 / 2.75
-                      ? 7.5625 * (t -= 1.5 / 2.75) * t + 0.75
-                      : t < 2.5 / 2.75
-                      ? 7.5625 * (t -= 2.25 / 2.75) * t + 0.9375
-                      : 7.5625 * (t -= 2.625 / 2.75) * t + 0.984375;
+                        ? 7.5625 * (t -= 1.5 / 2.75) * t + 0.75
+                        : t < 2.5 / 2.75
+                          ? 7.5625 * (t -= 2.25 / 2.75) * t + 0.9375
+                          : 7.5625 * (t -= 2.625 / 2.75) * t + 0.984375;
                   }),
                   (e.bouncePast = function (t) {
                     return t < 1 / 2.75
                       ? 7.5625 * t * t
                       : t < 2 / 2.75
-                      ? 2 - (7.5625 * (t -= 1.5 / 2.75) * t + 0.75)
-                      : t < 2.5 / 2.75
-                      ? 2 - (7.5625 * (t -= 2.25 / 2.75) * t + 0.9375)
-                      : 2 - (7.5625 * (t -= 2.625 / 2.75) * t + 0.984375);
+                        ? 2 - (7.5625 * (t -= 1.5 / 2.75) * t + 0.75)
+                        : t < 2.5 / 2.75
+                          ? 2 - (7.5625 * (t -= 2.25 / 2.75) * t + 0.9375)
+                          : 2 - (7.5625 * (t -= 2.625 / 2.75) * t + 0.984375);
                   }),
                   (e.easeFromTo = function (t) {
                     return (t /= 0.5) < 1
@@ -5610,7 +5610,7 @@ canvg(target, s)
                     return (
                       e
                         ? (1 === e.length || t.charAt(0).match(/(\d|\-|\.)/)) &&
-                          e.unshift("")
+                        e.unshift("")
                         : (e = ["", ""]),
                       e.join("VAL")
                     );
@@ -5619,7 +5619,7 @@ canvg(target, s)
                     return (
                       (t = t.replace(/#/, "")),
                       3 === t.length &&
-                        ((t = t.split("")),
+                      ((t = t.split("")),
                         (t = t[0] + t[0] + t[1] + t[1] + t[2] + t[2])),
                       [r(t.substr(0, 2)), r(t.substr(2, 2)), r(t.substr(4, 2))]
                     );
@@ -5632,9 +5632,9 @@ canvg(target, s)
                       i = e.replace(t, "VAL");
                     return (
                       r &&
-                        r.forEach(function (t) {
-                          return (i = i.replace("VAL", n(t)));
-                        }),
+                      r.forEach(function (t) {
+                        return (i = i.replace("VAL", n(t)));
+                      }),
                       i
                     );
                   },
@@ -5716,15 +5716,15 @@ canvg(target, s)
                         i = t[n];
                       "string" == typeof i
                         ? (function () {
-                            var e = i.split(" "),
-                              n = e[e.length - 1];
-                            r.forEach(function (r, i) {
-                              return (t[r] = e[i] || n);
-                            });
-                          })()
+                          var e = i.split(" "),
+                            n = e[e.length - 1];
+                          r.forEach(function (r, i) {
+                            return (t[r] = e[i] || n);
+                          });
+                        })()
                         : r.forEach(function (e) {
-                            return (t[e] = i);
-                          }),
+                          return (t[e] = i);
+                        }),
                         delete t[n];
                     });
                   },
@@ -5735,11 +5735,11 @@ canvg(target, s)
                       t[n] =
                         "string" == typeof i
                           ? r
-                              .map(function (e) {
-                                var n = t[e];
-                                return delete t[e], n;
-                              })
-                              .join(" ")
+                            .map(function (e) {
+                              var n = t[e];
+                              return delete t[e], n;
+                            })
+                            .join(" ")
                           : i;
                     });
                   };
@@ -6534,7 +6534,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 p =
                   (x +
                     ((p = y + radiusPlus1) < heightMinus1 ? p : heightMinus1) *
-                      width) <<
+                    width) <<
                   2;
 
                 r_sum += r_in_sum += stackIn.r = pixels[p];
@@ -6581,8 +6581,8 @@ OTHER DEALINGS IN THE SOFTWARE.
         /*! no static exports found */
         /***/ function (module, exports, __webpack_require__) {
           /*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
 */
 
           var stylesInDom = {};
@@ -6960,11 +6960,11 @@ OTHER DEALINGS IN THE SOFTWARE.
             var sourceMap = obj.sourceMap;
 
             /*
-		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
-		and there is no publicPath defined then lets turn convertToAbsoluteUrls
-		on by default.  Otherwise default to the convertToAbsoluteUrls option
-		directly
-	*/
+    If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+    and there is no publicPath defined then lets turn convertToAbsoluteUrls
+    on by default.  Otherwise default to the convertToAbsoluteUrls option
+    directly
+  */
             var autoFixUrls =
               options.convertToAbsoluteUrls === undefined && sourceMap;
 
@@ -7030,30 +7030,30 @@ OTHER DEALINGS IN THE SOFTWARE.
 
             // convert each url(...)
             /*
-	This regular expression is just a way to recursively match brackets within
-	a string.
+  This regular expression is just a way to recursively match brackets within
+  a string.
 
-	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
-	   (  = Start a capturing group
-	     (?:  = Start a non-capturing group
-	         [^)(]  = Match anything that isn't a parentheses
-	         |  = OR
-	         \(  = Match a start parentheses
-	             (?:  = Start another non-capturing groups
-	                 [^)(]+  = Match anything that isn't a parentheses
-	                 |  = OR
-	                 \(  = Match a start parentheses
-	                     [^)(]*  = Match anything that isn't a parentheses
-	                 \)  = Match a end parentheses
-	             )  = End Group
+   /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+     (  = Start a capturing group
+       (?:  = Start a non-capturing group
+           [^)(]  = Match anything that isn't a parentheses
+           |  = OR
+           \(  = Match a start parentheses
+               (?:  = Start another non-capturing groups
+                   [^)(]+  = Match anything that isn't a parentheses
+                   |  = OR
+                   \(  = Match a start parentheses
+                       [^)(]*  = Match anything that isn't a parentheses
+                   \)  = Match a end parentheses
+               )  = End Group
               *\) = Match anything and then a close parens
           )  = Close non-capturing group
           *  = Match anything
        )  = Close capturing group
-	 \)  = Match a close parens
+   \)  = Match a close parens
 
-	 /gi  = Get all matches, not the first.  Be case insensitive.
-	 */
+   /gi  = Get all matches, not the first.  Be case insensitive.
+   */
             var fixedCss = css.replace(
               /url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi,
               function (fullMatch, origUrl) {
@@ -7195,8 +7195,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                 fn =
                   errorImpl.length == 2
                     ? function (msg) {
-                        errorImpl(key, msg);
-                      }
+                      errorImpl(key, msg);
+                    }
                     : errorImpl;
               }
               errorHandler[key] =
@@ -7204,7 +7204,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                   function (msg) {
                     fn("[xmldom " + key + "]\t" + msg + _locator(locator));
                   }) ||
-                function () {};
+                function () { };
             }
             build("warning");
             build("error");
@@ -7267,14 +7267,14 @@ OTHER DEALINGS IN THE SOFTWARE.
               var tagName = current.tagName;
               this.currentElement = current.parentNode;
             },
-            startPrefixMapping: function (prefix, uri) {},
-            endPrefixMapping: function (prefix) {},
+            startPrefixMapping: function (prefix, uri) { },
+            endPrefixMapping: function (prefix) { },
             processingInstruction: function (target, data) {
               var ins = this.doc.createProcessingInstruction(target, data);
               this.locator && position(this.locator, ins);
               appendElement(this, ins);
             },
-            ignorableWhitespace: function (ch, start, length) {},
+            ignorableWhitespace: function (ch, start, length) { },
             characters: function (chars, start, length) {
               chars = _toString.apply(this, arguments);
               //console.log(chars)
@@ -7293,7 +7293,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.locator && position(this.locator, charNode);
               }
             },
-            skippedEntity: function (name) {},
+            skippedEntity: function (name) { },
             endDocument: function () {
               this.doc.normalize();
             },
@@ -7467,7 +7467,7 @@ OTHER DEALINGS IN THE SOFTWARE.
               pt.__proto__ = ppt;
             }
             if (!(pt instanceof Super)) {
-              function t() {}
+              function t() { }
               t.prototype = Super.prototype;
               t = new t();
               copy(pt, t);
@@ -7552,7 +7552,7 @@ OTHER DEALINGS IN THE SOFTWARE.
            * The NodeList interface provides the abstraction of an ordered collection of nodes, without defining or constraining how this collection is implemented. NodeList objects in the DOM are live.
            * The items in the NodeList are accessible via an integral index, starting from 0.
            */
-          function NodeList() {}
+          function NodeList() { }
           NodeList.prototype = {
             /**
              * The number of nodes in the list. The range of valid child node indices is 0 to length-1 inclusive.
@@ -7604,7 +7604,7 @@ OTHER DEALINGS IN THE SOFTWARE.
            * NamedNodeMap objects in the DOM are live.
            * used for attributes or DocumentType entities
            */
-          function NamedNodeMap() {}
+          function NamedNodeMap() { }
 
           function _findNodeIndex(list, node) {
             var i = list.length;
@@ -7778,7 +7778,7 @@ OTHER DEALINGS IN THE SOFTWARE.
            * @see http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/core.html#ID-1950641247
            */
 
-          function Node() {}
+          function Node() { }
 
           Node.prototype = {
             firstChild: null,
@@ -7920,7 +7920,7 @@ OTHER DEALINGS IN THE SOFTWARE.
             }
           }
 
-          function Document() {}
+          function Document() { }
           function _onAddAttribute(doc, el, newAttr) {
             doc && doc._inc++;
             var ns = newAttr.namespaceURI;
@@ -8308,11 +8308,11 @@ OTHER DEALINGS IN THE SOFTWARE.
             Element.prototype.getElementsByTagNameNS;
 
           _extends(Element, Node);
-          function Attr() {}
+          function Attr() { }
           Attr.prototype.nodeType = ATTRIBUTE_NODE;
           _extends(Attr, Node);
 
-          function CharacterData() {}
+          function CharacterData() { }
           CharacterData.prototype = {
             data: "",
             substringData: function (offset, count) {
@@ -8341,7 +8341,7 @@ OTHER DEALINGS IN THE SOFTWARE.
             },
           };
           _extends(CharacterData, Node);
-          function Text() {}
+          function Text() { }
           Text.prototype = {
             nodeName: "#text",
             nodeType: TEXT_NODE,
@@ -8359,45 +8359,45 @@ OTHER DEALINGS IN THE SOFTWARE.
             },
           };
           _extends(Text, CharacterData);
-          function Comment() {}
+          function Comment() { }
           Comment.prototype = {
             nodeName: "#comment",
             nodeType: COMMENT_NODE,
           };
           _extends(Comment, CharacterData);
 
-          function CDATASection() {}
+          function CDATASection() { }
           CDATASection.prototype = {
             nodeName: "#cdata-section",
             nodeType: CDATA_SECTION_NODE,
           };
           _extends(CDATASection, CharacterData);
 
-          function DocumentType() {}
+          function DocumentType() { }
           DocumentType.prototype.nodeType = DOCUMENT_TYPE_NODE;
           _extends(DocumentType, Node);
 
-          function Notation() {}
+          function Notation() { }
           Notation.prototype.nodeType = NOTATION_NODE;
           _extends(Notation, Node);
 
-          function Entity() {}
+          function Entity() { }
           Entity.prototype.nodeType = ENTITY_NODE;
           _extends(Entity, Node);
 
-          function EntityReference() {}
+          function EntityReference() { }
           EntityReference.prototype.nodeType = ENTITY_REFERENCE_NODE;
           _extends(EntityReference, Node);
 
-          function DocumentFragment() {}
+          function DocumentFragment() { }
           DocumentFragment.prototype.nodeName = "#document-fragment";
           DocumentFragment.prototype.nodeType = DOCUMENT_FRAGMENT_NODE;
           _extends(DocumentFragment, Node);
 
-          function ProcessingInstruction() {}
+          function ProcessingInstruction() { }
           ProcessingInstruction.prototype.nodeType = PROCESSING_INSTRUCTION_NODE;
           _extends(ProcessingInstruction, Node);
-          function XMLSerializer() {}
+          function XMLSerializer() { }
           XMLSerializer.prototype.serializeToString = function (
             node,
             isHtml,
@@ -8798,17 +8798,17 @@ OTHER DEALINGS IN THE SOFTWARE.
           var nameStartChar = /[A-Z_a-z\xC0-\xD6\xD8-\xF6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]/; //\u10000-\uEFFFF
           var nameChar = new RegExp(
             "[\\-\\.0-9" +
-              nameStartChar.source.slice(1, -1) +
-              "\\u00B7\\u0300-\\u036F\\u203F-\\u2040]"
+            nameStartChar.source.slice(1, -1) +
+            "\\u00B7\\u0300-\\u036F\\u203F-\\u2040]"
           );
           var tagNamePattern = new RegExp(
             "^" +
-              nameStartChar.source +
-              nameChar.source +
-              "*(?::" +
-              nameStartChar.source +
-              nameChar.source +
-              "*)?$"
+            nameStartChar.source +
+            nameChar.source +
+            "*(?::" +
+            nameStartChar.source +
+            nameChar.source +
+            "*)?$"
           );
           //var tagNamePattern = /^[a-zA-Z_][\w\-\.]*(?:\:[a-zA-Z_][\w\-\.]*)?$/
           //var handlers = 'resolveEntity,getExternalSubset,characters,endDocument,endElement,endPrefixMapping,ignorableWhitespace,processingInstruction,setDocumentLocator,skippedEntity,startDocument,startElement,startPrefixMapping,notationDecl,unparsedEntityDecl,error,fatalError,warning,attributeDecl,elementDecl,externalEntityDecl,internalEntityDecl,comment,endCDATA,endDTD,endEntity,startCDATA,startDTD,startEntity'.split(',')
@@ -8824,7 +8824,7 @@ OTHER DEALINGS IN THE SOFTWARE.
           var S_TAG_SPACE = 6; //(attr value end || tag end ) && (space offer)
           var S_TAG_CLOSE = 7; //closed el<el />
 
-          function XMLReader() {}
+          function XMLReader() { }
 
           XMLReader.prototype = {
             parse: function (source, defaultNSMap, entityMap) {
@@ -8929,9 +8929,9 @@ OTHER DEALINGS IN THE SOFTWARE.
                       //console.error('#@@@@@@'+tagName)
                       errorHandler.error(
                         "end tag name: " +
-                          tagName +
-                          " is not complete:" +
-                          config.tagName
+                        tagName +
+                        " is not complete:" +
+                        config.tagName
                       );
                       end = tagStart + 1 + tagName.length;
                     } else if (tagName.match(/\s</)) {
@@ -8963,9 +8963,9 @@ OTHER DEALINGS IN THE SOFTWARE.
                       if (!endMatch) {
                         errorHandler.fatalError(
                           "end tag name: " +
-                            tagName +
-                            " is not match the current start tagName:" +
-                            config.tagName
+                          tagName +
+                          " is not match the current start tagName:" +
+                          config.tagName
                         );
                       }
                     } else {
@@ -9128,10 +9128,10 @@ OTHER DEALINGS IN THE SOFTWARE.
                     //console.dir(el)
                     errorHandler.warning(
                       'attribute "' +
-                        attrName +
-                        '" missed start quot(' +
-                        c +
-                        ")!!"
+                      attrName +
+                      '" missed start quot(' +
+                      c +
+                      ")!!"
                     );
                     start = p + 1;
                     s = S_ATTR_END;
@@ -9200,10 +9200,10 @@ OTHER DEALINGS IN THE SOFTWARE.
                         ) {
                           errorHandler.warning(
                             'attribute "' +
-                              value +
-                              '" missed value!! "' +
-                              value +
-                              '" instead!!'
+                            value +
+                            '" missed value!! "' +
+                            value +
+                            '" instead!!'
                           );
                         }
                         el.add(value, value, start);
@@ -9263,10 +9263,10 @@ OTHER DEALINGS IN THE SOFTWARE.
                         ) {
                           errorHandler.warning(
                             'attribute "' +
-                              attrName +
-                              '" missed value!! "' +
-                              attrName +
-                              '" instead2!!'
+                            attrName +
+                            '" missed value!! "' +
+                            attrName +
+                            '" instead2!!'
                           );
                         }
                         el.add(attrName, attrName, start);
@@ -9495,7 +9495,7 @@ OTHER DEALINGS IN THE SOFTWARE.
           /**
            * @param source
            */
-          function ElementAttributes(source) {}
+          function ElementAttributes(source) { }
           ElementAttributes.prototype = {
             setTagName: function (tagName) {
               if (!tagNamePattern.test(tagName)) {
@@ -9549,7 +9549,7 @@ OTHER DEALINGS IN THE SOFTWARE.
             !(_set_proto_({}, _set_proto_.prototype) instanceof _set_proto_)
           ) {
             _set_proto_ = function (thiz, parent) {
-              function p() {}
+              function p() { }
               p.prototype = parent;
               p = new p();
               for (parent in thiz) {
@@ -9697,7 +9697,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                       event.ctrlKey
                     );
                   },
-                  stop: function stop(e, ui) {},
+                  stop: function stop(e, ui) { },
                   start: function start(e, ui) {
                     $(ui.helper).addClass("shadow");
                   },
@@ -10162,7 +10162,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @since 4.0.0
                * @@interface
                */
-              hideDecoration: function hideDecoration() {},
+              hideDecoration: function hideDecoration() { },
 
               /**
                *
@@ -10173,7 +10173,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @since 4.0.0
                * @template
                */
-              showDecoration: function showDecoration() {},
+              showDecoration: function showDecoration() { },
 
               /**
                *
@@ -10475,9 +10475,9 @@ OTHER DEALINGS IN THE SOFTWARE.
               ) {
                 return new _packages2.default.geo.Point(
                   (x - this.getAbsoluteX() + this.getScrollLeft()) *
-                    this.zoomFactor,
+                  this.zoomFactor,
                   (y - this.getAbsoluteY() + this.getScrollTop()) *
-                    this.zoomFactor
+                  this.zoomFactor
                 );
               },
 
@@ -10496,11 +10496,11 @@ OTHER DEALINGS IN THE SOFTWARE.
               ) {
                 return new _packages2.default.geo.Point(
                   x * (1 / this.zoomFactor) +
-                    this.getAbsoluteX() -
-                    this.getScrollLeft(),
+                  this.getAbsoluteX() -
+                  this.getScrollLeft(),
                   y * (1 / this.zoomFactor) +
-                    this.getAbsoluteY() -
-                    this.getScrollTop()
+                  this.getAbsoluteY() -
+                  this.getScrollTop()
                 );
               },
 
@@ -11110,11 +11110,11 @@ OTHER DEALINGS IN THE SOFTWARE.
                 var isInWhitelist =
                   whitelist.length === 0
                     ? function () {
-                        return true;
-                      }
+                      return true;
+                    }
                     : function (item) {
-                        return isInList(item, whitelist);
-                      };
+                      return isInList(item, whitelist);
+                    };
 
                 // tool method to check recursive a figure for hitTest
                 //
@@ -11304,7 +11304,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              onDragEnter: function onDragEnter(draggedDomNode) {},
+              onDragEnter: function onDragEnter(draggedDomNode) { },
 
               /**
                *
@@ -11319,7 +11319,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              onDrag: function onDrag(draggedDomNode, x, y) {},
+              onDrag: function onDrag(draggedDomNode, x, y) { },
 
               /**
                *
@@ -11332,7 +11332,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              onDragLeave: function onDragLeave(draggedDomNode) {},
+              onDragLeave: function onDragLeave(draggedDomNode) { },
 
               /**
                *
@@ -11355,7 +11355,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 y,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
 
               /**
                *
@@ -12159,15 +12159,15 @@ OTHER DEALINGS IN THE SOFTWARE.
                   var start = this.getVertices().first();
                   this.sourceDecoratorNode.transform(
                     "r" +
-                      this.getStartAngle() +
-                      "," +
-                      start.x +
-                      "," +
-                      start.y +
-                      " t" +
-                      start.x +
-                      "," +
-                      start.y
+                    this.getStartAngle() +
+                    "," +
+                    start.x +
+                    "," +
+                    start.y +
+                    " t" +
+                    start.x +
+                    "," +
+                    start.y
                   );
                   // propagate the color and the opacity to the decoration as well
                   this.sourceDecoratorNode.attr({ opacity: this.alpha });
@@ -12193,15 +12193,15 @@ OTHER DEALINGS IN THE SOFTWARE.
                   var end = this.getVertices().last();
                   this.targetDecoratorNode.transform(
                     "r" +
-                      this.getEndAngle() +
-                      "," +
-                      end.x +
-                      "," +
-                      end.y +
-                      " t" +
-                      end.x +
-                      "," +
-                      end.y
+                    this.getEndAngle() +
+                    "," +
+                    end.x +
+                    "," +
+                    end.y +
+                    " t" +
+                    end.x +
+                    "," +
+                    end.y
                   );
                   this.targetDecoratorNode.attr({ opacity: this.alpha });
                   // apply the color of the connection if the decoration doesn't have any
@@ -13703,7 +13703,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                */
-              onTimer: function onTimer() {},
+              onTimer: function onTimer() { },
 
               /**
                *
@@ -13723,7 +13723,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 //
                 if (
                   this.composite instanceof
-                    _packages2.default.shape.composite.StrongComposite &&
+                  _packages2.default.shape.composite.StrongComposite &&
                   typeof figure !== "undefined"
                 ) {
                   var indexFigure = figure.getZOrder();
@@ -14402,7 +14402,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 dy2,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
 
               /**
                *
@@ -14415,7 +14415,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *     });
                *
                */
-              onPanningEnd: function onPanningEnd() {},
+              onPanningEnd: function onPanningEnd() { },
 
               /**
                *
@@ -14507,7 +14507,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              onDragEnter: function onDragEnter(draggedFigure) {},
+              onDragEnter: function onDragEnter(draggedFigure) { },
 
               /**
                *
@@ -14516,7 +14516,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @param {draw2d.Figure} draggedFigure The figure which is currently dragging
                * @template
                **/
-              onDragLeave: function onDragLeave(draggedFigure) {},
+              onDragLeave: function onDragLeave(draggedFigure) { },
 
               /**
                *
@@ -14531,7 +14531,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @param {Boolean} ctrlKey true if the ctrl key has been pressed during the event
                * @template
                **/
-              onDrop: function onDrop(dropTarget, x, y, shiftKey, ctrlKey) {},
+              onDrop: function onDrop(dropTarget, x, y, shiftKey, ctrlKey) { },
 
               /**
                *
@@ -14553,7 +14553,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 y,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
 
               /**
                *
@@ -14562,7 +14562,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              onMouseEnter: function onMouseEnter() {},
+              onMouseEnter: function onMouseEnter() { },
 
               /**
                *
@@ -14570,7 +14570,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              onMouseLeave: function onMouseLeave() {},
+              onMouseLeave: function onMouseLeave() { },
 
               /**
                *
@@ -14584,7 +14584,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                */
-              onDoubleClick: function onDoubleClick() {},
+              onDoubleClick: function onDoubleClick() { },
 
               /**
                *
@@ -14598,7 +14598,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @template
                * @deprecated
                */
-              onClick: function onClick() {},
+              onClick: function onClick() { },
 
               /**
                *
@@ -14616,7 +14616,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @since 1.1.0
                * @template
                */
-              onContextMenu: function onContextMenu(x, y) {},
+              onContextMenu: function onContextMenu(x, y) { },
 
               /**
                *
@@ -15971,7 +15971,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 return this;
               },
 
-              calculateConnectionIntersection: function calculateConnectionIntersection() {},
+              calculateConnectionIntersection: function calculateConnectionIntersection() { },
 
               /**
                *
@@ -15981,7 +15981,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @since 4.0.0
                * @template
                */
-              hideDecoration: function hideDecoration() {},
+              hideDecoration: function hideDecoration() { },
 
               /**
                *
@@ -15992,7 +15992,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @since 4.0.0
                * @template
                */
-              showDecoration: function showDecoration() {},
+              showDecoration: function showDecoration() { },
 
               /**
                *
@@ -17044,7 +17044,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @@private
                **/
-              onDrop: function onDrop(dropTarget, x, y, shiftKey, ctrlKey) {},
+              onDrop: function onDrop(dropTarget, x, y, shiftKey, ctrlKey) { },
 
               /**
                *
@@ -17060,7 +17060,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              onConnect: function onConnect(connection) {},
+              onConnect: function onConnect(connection) { },
 
               /**
                *
@@ -17076,7 +17076,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              onDisconnect: function onDisconnect(connection) {},
+              onDisconnect: function onDisconnect(connection) { },
 
               /**
                *
@@ -17140,11 +17140,11 @@ OTHER DEALINGS IN THE SOFTWARE.
                   );
                   this.corona.setPosition(
                     this.getAbsoluteX() -
-                      this.getCoronaWidth() -
-                      this.getWidth() / 2,
+                    this.getCoronaWidth() -
+                    this.getWidth() / 2,
                     this.getAbsoluteY() -
-                      this.getCoronaWidth() -
-                      this.getHeight() / 2
+                    this.getCoronaWidth() -
+                    this.getHeight() / 2
                   );
 
                   this.corona.setCanvas(this.getCanvas());
@@ -18818,7 +18818,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 //
                 if (
                   this.composite instanceof
-                    _packages2.default.shape.composite.StrongComposite &&
+                  _packages2.default.shape.composite.StrongComposite &&
                   typeof figure !== "undefined"
                 ) {
                   var indexFigure = figure.getZOrder();
@@ -19469,7 +19469,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              execute: function execute() {},
+              execute: function execute() { },
 
               /**
                *
@@ -19477,7 +19477,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              cancel: function cancel() {},
+              cancel: function cancel() { },
 
               /**
                *
@@ -19486,7 +19486,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              undo: function undo() {},
+              undo: function undo() { },
 
               /**
                *
@@ -19495,7 +19495,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                **/
-              redo: function redo() {},
+              redo: function redo() { },
             }
           );
 
@@ -19780,9 +19780,9 @@ OTHER DEALINGS IN THE SOFTWARE.
                   connections.each(function (i, connection) {
                     if (
                       connection.getSource().getParent().getComposite() ===
-                        _this.composite &&
+                      _this.composite &&
                       connection.getTarget().getParent().getComposite() ===
-                        _this.composite
+                      _this.composite
                     ) {
                       if (connection.getComposite() !== _this.composite) {
                         _this.assignedConnections.add({
@@ -22423,7 +22423,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * Creates a new Listener Object
                *
                */
-              init: function init() {},
+              init: function init() { },
 
               /**
                *
@@ -22434,7 +22434,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @param {draw2d.command.CommandStackEvent} event
                **/
-              stackChanged: function stackChanged(event) {},
+              stackChanged: function stackChanged(event) { },
             }
           );
 
@@ -23604,7 +23604,7 @@ OTHER DEALINGS IN THE SOFTWARE.
               distance: function distance(other) {
                 return Math.sqrt(
                   (this.x - other.x) * (this.x - other.x) +
-                    (this.y - other.y) * (this.y - other.y)
+                  (this.y - other.y) * (this.y - other.y)
                 );
               },
               /* @deprecated */
@@ -26086,7 +26086,7 @@ OTHER DEALINGS IN THE SOFTWARE.
           _packages2.default.io.Reader = Class.extend(
             /** @lends draw2d.io.Reader */
             {
-              init: function init() {},
+              init: function init() { },
 
               /**
                *
@@ -26138,7 +26138,7 @@ OTHER DEALINGS IN THE SOFTWARE.
             /** @lends draw2d.io.Writer */
 
             {
-              init: function init() {},
+              init: function init() { },
 
               /**
                *
@@ -26358,12 +26358,12 @@ OTHER DEALINGS IN THE SOFTWARE.
                     debug.error(
                       element,
                       "Unable to instantiate figure type '" +
-                        element.type +
-                        "' with id '" +
-                        element.id +
-                        "' during unmarshal by " +
-                        _this.NAME +
-                        ". Skipping figure.."
+                      element.type +
+                      "' with id '" +
+                      element.id +
+                      "' during unmarshal by " +
+                      _this.NAME +
+                      ". Skipping figure.."
                     );
                     debug.error(exc);
                     debug.warn(element);
@@ -27854,7 +27854,7 @@ OTHER DEALINGS IN THE SOFTWARE.
               /**
                * Creates a new Router object
                */
-              init: function init() {},
+              init: function init() { },
 
               /**
                *
@@ -27941,7 +27941,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @template
                * @since 2.7.2
                */
-              onInstall: function onInstall(connection) {},
+              onInstall: function onInstall(connection) { },
 
               /**
                *
@@ -27951,7 +27951,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @template
                * @since 2.7.2
                */
-              onUninstall: function onUninstall(connection) {},
+              onUninstall: function onUninstall(connection) { },
 
               /**
                *
@@ -28005,7 +28005,7 @@ OTHER DEALINGS IN THE SOFTWARE.
               setPersistentAttributes: function setPersistentAttributes(
                 line,
                 memento
-              ) {},
+              ) { },
 
               /**
                *
@@ -28019,7 +28019,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @param {Number} dx2 The x diff since the last call of this dragging operation
                * @param {Number} dy2 The y diff since the last call of this dragging operation
                */
-              onDrag: function onDrag(line, dx, dy, dx2, dy2) {},
+              onDrag: function onDrag(line, dx, dy, dx2, dy2) { },
 
               /**
                *
@@ -28029,7 +28029,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @protected
                * @param {draw2d.shape.basic.Line} line
                */
-              verticesSet: function verticesSet(line) {},
+              verticesSet: function verticesSet(line) { },
             }
           );
 
@@ -28128,7 +28128,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * Invalidates the given Connection
                */
-              invalidate: function invalidate() {},
+              invalidate: function invalidate() { },
 
               /**
                * @inheritdoc
@@ -28535,7 +28535,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 //
                 if (
                   fromDir ===
-                    _packages2.default.geo.Rectangle.DIRECTION_RIGHT &&
+                  _packages2.default.geo.Rectangle.DIRECTION_RIGHT &&
                   toDir === _packages2.default.geo.Rectangle.DIRECTION_LEFT &&
                   fromPt.x > toPt.x &&
                   vertexCount <= 4
@@ -28780,7 +28780,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                   //
                   if (
                     fromDir ===
-                      _packages2.default.geo.Rectangle.DIRECTION_RIGHT &&
+                    _packages2.default.geo.Rectangle.DIRECTION_RIGHT &&
                     toDir === _packages2.default.geo.Rectangle.DIRECTION_LEFT &&
                     fromPt.x >= toPt.x
                   ) {
@@ -28803,8 +28803,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                   if (
                     (fromDir ==
                       _packages2.default.geo.Rectangle.DIRECTION_LEFT) &
-                      (toDir ==
-                        _packages2.default.geo.Rectangle.DIRECTION_RIGHT) &&
+                    (toDir ==
+                      _packages2.default.geo.Rectangle.DIRECTION_RIGHT) &&
                     fromPt.x <= toPt.x
                   ) {
                     return false;
@@ -28821,8 +28821,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                   //
                   if (
                     (fromDir == _packages2.default.geo.Rectangle.DIRECTION_UP) &
-                      (toDir ==
-                        _packages2.default.geo.Rectangle.DIRECTION_DOWN) &&
+                    (toDir ==
+                      _packages2.default.geo.Rectangle.DIRECTION_DOWN) &&
                     fromPt.y <= toPt.y
                   ) {
                     return false;
@@ -28840,8 +28840,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                   if (
                     (fromDir ==
                       _packages2.default.geo.Rectangle.DIRECTION_DOWN) &
-                      (toDir ==
-                        _packages2.default.geo.Rectangle.DIRECTION_UP) &&
+                    (toDir ==
+                      _packages2.default.geo.Rectangle.DIRECTION_UP) &&
                     fromPt.y >= toPt.y
                   ) {
                     return false;
@@ -29532,16 +29532,16 @@ OTHER DEALINGS IN THE SOFTWARE.
           var _typeof =
             typeof Symbol === "function" && typeof Symbol.iterator === "symbol"
               ? function (obj) {
-                  return typeof obj;
-                }
+                return typeof obj;
+              }
               : function (obj) {
-                  return obj &&
-                    typeof Symbol === "function" &&
-                    obj.constructor === Symbol &&
-                    obj !== Symbol.prototype
-                    ? "symbol"
-                    : typeof obj;
-                };
+                return obj &&
+                  typeof Symbol === "function" &&
+                  obj.constructor === Symbol &&
+                  obj !== Symbol.prototype
+                  ? "symbol"
+                  : typeof obj;
+              };
 
           var _packages = __webpack_require__(
             /*! ../../packages */ "./src/packages.js"
@@ -30086,7 +30086,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                     (typeof Uint8Array === "undefined"
                       ? "undefined"
                       : _typeof(Uint8Array)) !==
-                    undefined + ""
+                      undefined + ""
                       ? Uint8Array
                       : Array,
                   markers = new MarkerArray(len),
@@ -30348,8 +30348,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                         while (
                           figure != null &&
                           figure.getBoundingBox().x +
-                            figure.getBoundingBox().width >
-                            next
+                          figure.getBoundingBox().width >
+                          next
                         ) {
                           j =
                             figure.getBoundingBox().y +
@@ -30379,7 +30379,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                             start.translated(
                               new _packages2.default.geo.Ray(
                                 (3 * (_figure.getBoundingBox().x - start.x)) /
-                                  4,
+                                4,
                                 0
                               )
                             ).x
@@ -30909,7 +30909,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * Invalidates the given Connection
                */
-              invalidate: function invalidate() {},
+              invalidate: function invalidate() { },
 
               /**
                * @inheritdoc
@@ -31416,7 +31416,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * Invalidates the given Connection
                */
-              invalidate: function invalidate() {},
+              invalidate: function invalidate() { },
 
               /**
                * @inheritdoc
@@ -33389,7 +33389,7 @@ OTHER DEALINGS IN THE SOFTWARE.
               /**
                * Creates a new layouter object.
                */
-              init: function init() {},
+              init: function init() { },
 
               /**
                *
@@ -33689,7 +33689,7 @@ OTHER DEALINGS IN THE SOFTWARE.
               /**
                * Creates a new layouter object.
                */
-              init: function init() {},
+              init: function init() { },
 
               /**
                *
@@ -33829,7 +33829,7 @@ OTHER DEALINGS IN THE SOFTWARE.
           (function ($) {
             var uid = "ar" + +new Date(),
               defaults = (autoResize.defaults = {
-                onResize: function onResize() {},
+                onResize: function onResize() { },
                 onBeforeResize: function onBeforeResize() {
                   return 123;
                 },
@@ -33838,7 +33838,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 },
                 animate: {
                   duration: 200,
-                  complete: function complete() {},
+                  complete: function complete() { },
                 },
                 extraSpace: 50,
                 minHeight: "original",
@@ -34183,7 +34183,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                   try {
                     $(elem).triggerHandler("remove");
                     // http://bugs.jquery.com/ticket/8235
-                  } catch (e) {}
+                  } catch (e) { }
                 }
                 _cleanData(elems);
               };
@@ -34523,7 +34523,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
                   try {
                     clearTimeout(hoveract.timer);
-                  } catch (e) {}
+                  } catch (e) { }
 
                   hoveract.timer = null;
                 },
@@ -34728,7 +34728,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                       } else {
                         ((opt.$selected && opt.$selected.parent()) || opt.$menu)
                           .children(":not(.disabled, .not-selectable)")
-                          [e.keyCode == 36 ? "first" : "last"]()
+                        [e.keyCode == 36 ? "first" : "last"]()
                           .trigger("contextmenu:focus");
                         e.preventDefault();
                         return;
@@ -35096,9 +35096,9 @@ OTHER DEALINGS IN THE SOFTWARE.
                   // position and show context menu
                   opt.$menu
                     .css(css)
-                    [opt.animation.show](opt.animation.duration, function () {
-                      $trigger.trigger("contextmenu:visible");
-                    });
+                  [opt.animation.show](opt.animation.duration, function () {
+                    $trigger.trigger("contextmenu:visible");
+                  });
                   // make options available and set state
                   $trigger
                     .data("contextMenu", opt)
@@ -35201,7 +35201,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                                 opt[key] = undefined;
                                 try {
                                   delete opt[key];
-                                } catch (e) {}
+                                } catch (e) { }
                                 return true;
                             }
                           });
@@ -35237,8 +35237,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                   // create contextMenu items
                   $.each(opt.items, function (key, item) {
                     var $t = $('<li class="context-menu-item"></li>').addClass(
-                        item.className || ""
-                      ),
+                      item.className || ""
+                    ),
                       $label = null,
                       $input = null;
 
@@ -35529,8 +35529,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                   // filter and background for Internet Explorer, Issue #23
                   var $layer = (opt.$layer = $(
                     '<div id="context-menu-layer" style="position:fixed; z-index:' +
-                      zIndex +
-                      '; top:0; left:0; opacity: 0; filter: alpha(opacity=0); background-color: #000;"></div>'
+                    zIndex +
+                    '; top:0; left:0; opacity: 0; filter: alpha(opacity=0); background-color: #000;"></div>'
                   )
                     .css({
                       height: $win.height(),
@@ -35637,8 +35637,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                   ) {
                     throw new Error(
                       'Cannot bind to selector "' +
-                        o.selector +
-                        '" as it contains a reserved className'
+                      o.selector +
+                      '" as it contains a reserved className'
                     );
                   }
                   if (!o.build && (!o.items || $.isEmptyObject(o.items))) {
@@ -36452,7 +36452,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @param {draw2d.Canvas|draw2d.Figure} host
                */
-              onInstall: function onInstall(host) {},
+              onInstall: function onInstall(host) { },
 
               /**
                *
@@ -36460,7 +36460,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @param {draw2d.Canvas|draw2d.Figure} host
                */
-              onUninstall: function onUninstall(host) {},
+              onUninstall: function onUninstall(host) { },
             }
           );
 
@@ -36861,9 +36861,9 @@ OTHER DEALINGS IN THE SOFTWARE.
                       });
                   } else if (
                     this.mouseDownElement instanceof
-                      _packages2.default.ResizeHandle ||
+                    _packages2.default.ResizeHandle ||
                     this.mouseDownElement instanceof
-                      _packages2.default.shape.basic.LineResizeHandle
+                    _packages2.default.shape.basic.LineResizeHandle
                   ) {
                   }
                   // Do nothing
@@ -37017,7 +37017,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 y,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
 
               /**
                *
@@ -37034,7 +37034,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 y,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
 
               /**
                *
@@ -37055,7 +37055,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 dy2,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
 
               /**
                *
@@ -37066,7 +37066,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @param {Boolean} shiftKey true if the shift key has been pressed during this event
                * @param {Boolean} ctrlKey true if the ctrl key has been pressed during the event
                */
-              onMouseUp: function onMouseUp(canvas, x, y, shiftKey, ctrlKey) {},
+              onMouseUp: function onMouseUp(canvas, x, y, shiftKey, ctrlKey) { },
 
               /**
                *
@@ -37085,7 +37085,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 y,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
 
               /**
                *
@@ -37107,7 +37107,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 mouseY,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
 
               /**
                *
@@ -37129,7 +37129,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 mouseY,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
 
               /**
                *
@@ -37465,11 +37465,11 @@ OTHER DEALINGS IN THE SOFTWARE.
                         var alpha = Math.max(
                           0,
                           1 -
-                            ((100 /
-                              (_this.diameterToBeVisible -
-                                _this.diameterToBeFullVisible)) *
-                              dist) /
-                              100.0
+                          ((100 /
+                            (_this.diameterToBeVisible -
+                              _this.diameterToBeFullVisible)) *
+                            dist) /
+                          100.0
                         );
                         p.setAlpha(alpha);
                       });
@@ -37706,7 +37706,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 if (
                   !(connectInquirer instanceof _packages2.default.Port) &&
                   connectIntent instanceof
-                    _packages2.default.shape.composite.StrongComposite
+                  _packages2.default.shape.composite.StrongComposite
                 ) {
                   return connectIntent;
                 }
@@ -37857,7 +37857,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                       // G
                       if (
                         canvas.getPrimarySelection() instanceof
-                          _packages2.default.shape.composite.Group &&
+                        _packages2.default.shape.composite.Group &&
                         canvas.getSelection().getSize() === 1
                       ) {
                         canvas
@@ -38755,7 +38755,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @param {draw2d.Figure} figure
                *
                */
-              select: function select(canvas, figure) {},
+              select: function select(canvas, figure) { },
 
               /**
                *
@@ -40041,13 +40041,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      start.x +
-                      " " +
-                      ((start.y | 0) + 0.5) +
-                      " L " +
-                      end.x +
-                      " " +
-                      ((end.y | 0) + 0.5)
+                    start.x +
+                    " " +
+                    ((start.y | 0) + 0.5) +
+                    " L " +
+                    end.x +
+                    " " +
+                    ((end.y | 0) + 0.5)
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -40108,13 +40108,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      ((start.x | 0) + 0.5) +
-                      " " +
-                      start.y +
-                      " L " +
-                      ((end.x | 0) + 0.5) +
-                      " " +
-                      end.y
+                    ((start.x | 0) + 0.5) +
+                    " " +
+                    start.y +
+                    " L " +
+                    ((end.x | 0) + 0.5) +
+                    " " +
+                    end.y
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -40494,7 +40494,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                   if (
                     allowXChanges &&
                     snapDirections &
-                      _packages2.default.SnapToHelper.EAST_WEST &&
+                    _packages2.default.SnapToHelper.EAST_WEST &&
                     !(result.edge & _packages2.default.SnapToHelper.EAST_WEST)
                   ) {
                     this.showVerticalLine(
@@ -40511,7 +40511,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                   if (
                     allowYChanges &&
                     snapDirections &
-                      _packages2.default.SnapToHelper.NORTH_SOUTH &&
+                    _packages2.default.SnapToHelper.NORTH_SOUTH &&
                     !(result.edge & _packages2.default.SnapToHelper.NORTH_SOUTH)
                   ) {
                     this.showHorizontalLine(
@@ -41517,13 +41517,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      ((constraint.leftSide.x | 0) + 0.5) +
-                      " " +
-                      y +
-                      " L " +
-                      ((constraint.leftSide.x | 0) + 0.5) +
-                      " " +
-                      constraint.leftSide.y
+                    ((constraint.leftSide.x | 0) + 0.5) +
+                    " " +
+                    y +
+                    " L " +
+                    ((constraint.leftSide.x | 0) + 0.5) +
+                    " " +
+                    constraint.leftSide.y
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -41534,13 +41534,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      ((snapTopLeft.x | 0) + 0.5) +
-                      " " +
-                      y +
-                      " L " +
-                      ((snapTopLeft.x | 0) + 0.5) +
-                      " " +
-                      snapTopLeft.y
+                    ((snapTopLeft.x | 0) + 0.5) +
+                    " " +
+                    y +
+                    " L " +
+                    ((snapTopLeft.x | 0) + 0.5) +
+                    " " +
+                    snapTopLeft.y
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -41551,13 +41551,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      ((snapTopRight.x | 0) + 0.5) +
-                      " " +
-                      y +
-                      " L " +
-                      ((snapTopRight.x | 0) + 0.5) +
-                      " " +
-                      snapTopRight.y
+                    ((snapTopRight.x | 0) + 0.5) +
+                    " " +
+                    y +
+                    " L " +
+                    ((snapTopRight.x | 0) + 0.5) +
+                    " " +
+                    snapTopRight.y
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -41568,13 +41568,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      ((constraint.rightSide.x | 0) + 0.5) +
-                      " " +
-                      y +
-                      " L " +
-                      ((constraint.rightSide.x | 0) + 0.5) +
-                      " " +
-                      constraint.rightSide.y
+                    ((constraint.rightSide.x | 0) + 0.5) +
+                    " " +
+                    y +
+                    " L " +
+                    ((constraint.rightSide.x | 0) + 0.5) +
+                    " " +
+                    constraint.rightSide.y
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -41587,13 +41587,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      constraint.leftSide.x +
-                      " " +
-                      (y + 5) +
-                      " L " +
-                      snapTopLeft.x +
-                      " " +
-                      (y + 5)
+                    constraint.leftSide.x +
+                    " " +
+                    (y + 5) +
+                    " L " +
+                    snapTopLeft.x +
+                    " " +
+                    (y + 5)
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -41602,13 +41602,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      constraint.rightSide.x +
-                      " " +
-                      (y + 5) +
-                      " L " +
-                      snapTopRight.x +
-                      " " +
-                      (y + 5)
+                    constraint.rightSide.x +
+                    " " +
+                    (y + 5) +
+                    " L " +
+                    snapTopRight.x +
+                    " " +
+                    (y + 5)
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -41620,68 +41620,68 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     " M " +
-                      (constraint.leftSide.x + 5) +
-                      " " +
-                      y +
-                      " L " +
-                      constraint.leftSide.x +
-                      " " +
-                      (y + 5) +
-                      " L " +
-                      (constraint.leftSide.x + 5) +
-                      " " +
-                      (y + 10)
+                    (constraint.leftSide.x + 5) +
+                    " " +
+                    y +
+                    " L " +
+                    constraint.leftSide.x +
+                    " " +
+                    (y + 5) +
+                    " L " +
+                    (constraint.leftSide.x + 5) +
+                    " " +
+                    (y + 10)
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
                 this.canvas.paper
                   .path(
                     " M " +
-                      (snapTopLeft.x - 5) +
-                      " " +
-                      y +
-                      " L " +
-                      snapTopLeft.x +
-                      " " +
-                      (y + 5) +
-                      " L " +
-                      (snapTopLeft.x - 5) +
-                      " " +
-                      (y + 10)
+                    (snapTopLeft.x - 5) +
+                    " " +
+                    y +
+                    " L " +
+                    snapTopLeft.x +
+                    " " +
+                    (y + 5) +
+                    " L " +
+                    (snapTopLeft.x - 5) +
+                    " " +
+                    (y + 10)
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
                 this.canvas.paper
                   .path(
                     " M " +
-                      (snapTopRight.x + 5) +
-                      " " +
-                      y +
-                      " L " +
-                      snapTopRight.x +
-                      " " +
-                      (y + 5) +
-                      " L " +
-                      (snapTopRight.x + 5) +
-                      " " +
-                      (y + 10)
+                    (snapTopRight.x + 5) +
+                    " " +
+                    y +
+                    " L " +
+                    snapTopRight.x +
+                    " " +
+                    (y + 5) +
+                    " L " +
+                    (snapTopRight.x + 5) +
+                    " " +
+                    (y + 10)
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
                 this.canvas.paper
                   .path(
                     " M " +
-                      (constraint.rightSide.x - 5) +
-                      " " +
-                      y +
-                      " L " +
-                      constraint.rightSide.x +
-                      " " +
-                      (y + 5) +
-                      " L " +
-                      (constraint.rightSide.x - 5) +
-                      " " +
-                      (y + 10)
+                    (constraint.rightSide.x - 5) +
+                    " " +
+                    y +
+                    " L " +
+                    constraint.rightSide.x +
+                    " " +
+                    (y + 5) +
+                    " L " +
+                    (constraint.rightSide.x - 5) +
+                    " " +
+                    (y + 10)
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
@@ -41751,13 +41751,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      x +
-                      " " +
-                      ((constraint.topSide.y | 0) + 0.5) +
-                      " L " +
-                      ((constraint.topSide.x | 0) + 0.5) +
-                      " " +
-                      ((constraint.topSide.y | 0) + 0.5)
+                    x +
+                    " " +
+                    ((constraint.topSide.y | 0) + 0.5) +
+                    " L " +
+                    ((constraint.topSide.x | 0) + 0.5) +
+                    " " +
+                    ((constraint.topSide.y | 0) + 0.5)
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -41767,13 +41767,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      x +
-                      " " +
-                      ((snapTopRight.y | 0) + 0.5) +
-                      " L " +
-                      ((snapTopRight.x | 0) + 0.5) +
-                      " " +
-                      ((snapTopRight.y | 0) + 0.5)
+                    x +
+                    " " +
+                    ((snapTopRight.y | 0) + 0.5) +
+                    " L " +
+                    ((snapTopRight.x | 0) + 0.5) +
+                    " " +
+                    ((snapTopRight.y | 0) + 0.5)
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -41783,13 +41783,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      x +
-                      " " +
-                      ((snapBottomRight.y | 0) + 0.5) +
-                      " L " +
-                      ((snapBottomRight.x | 0) + 0.5) +
-                      " " +
-                      ((snapBottomRight.y | 0) + 0.5)
+                    x +
+                    " " +
+                    ((snapBottomRight.y | 0) + 0.5) +
+                    " L " +
+                    ((snapBottomRight.x | 0) + 0.5) +
+                    " " +
+                    ((snapBottomRight.y | 0) + 0.5)
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -41799,13 +41799,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      x +
-                      " " +
-                      ((constraint.bottomSide.y | 0) + 0.5) +
-                      " L " +
-                      ((constraint.bottomSide.x | 0) + 0.5) +
-                      " " +
-                      ((constraint.bottomSide.y | 0) + 0.5)
+                    x +
+                    " " +
+                    ((constraint.bottomSide.y | 0) + 0.5) +
+                    " L " +
+                    ((constraint.bottomSide.x | 0) + 0.5) +
+                    " " +
+                    ((constraint.bottomSide.y | 0) + 0.5)
                   )
                   .attr({
                     stroke: this.lineColor.rgba(),
@@ -41818,25 +41818,25 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      (x - 5) +
-                      " " +
-                      ((constraint.topSide.y | 0) + 0.5) +
-                      " L " +
-                      (x - 5) +
-                      " " +
-                      ((snapTopRight.y | 0) + 0.5)
+                    (x - 5) +
+                    " " +
+                    ((constraint.topSide.y | 0) + 0.5) +
+                    " L " +
+                    (x - 5) +
+                    " " +
+                    ((snapTopRight.y | 0) + 0.5)
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
                 this.canvas.paper
                   .path(
                     "M " +
-                      (x - 5) +
-                      " " +
-                      ((constraint.bottomSide.y | 0) + 0.5) +
-                      " L " +
-                      (x - 5) +
-                      " " +
-                      ((snapBottomRight.y | 0) + 0.5)
+                    (x - 5) +
+                    " " +
+                    ((constraint.bottomSide.y | 0) + 0.5) +
+                    " L " +
+                    (x - 5) +
+                    " " +
+                    ((snapBottomRight.y | 0) + 0.5)
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
@@ -41845,68 +41845,68 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     " M " +
-                      (x - 10) +
-                      " " +
-                      (constraint.topSide.y + 5) +
-                      " L " +
-                      (x - 5) +
-                      " " +
-                      constraint.topSide.y +
-                      " L " +
-                      x +
-                      " " +
-                      (constraint.topSide.y + 5)
+                    (x - 10) +
+                    " " +
+                    (constraint.topSide.y + 5) +
+                    " L " +
+                    (x - 5) +
+                    " " +
+                    constraint.topSide.y +
+                    " L " +
+                    x +
+                    " " +
+                    (constraint.topSide.y + 5)
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
                 this.canvas.paper
                   .path(
                     " M " +
-                      (x - 10) +
-                      " " +
-                      (snapTopRight.y - 5) +
-                      " L " +
-                      (x - 5) +
-                      " " +
-                      snapTopRight.y +
-                      " L " +
-                      x +
-                      " " +
-                      (snapTopRight.y - 5)
+                    (x - 10) +
+                    " " +
+                    (snapTopRight.y - 5) +
+                    " L " +
+                    (x - 5) +
+                    " " +
+                    snapTopRight.y +
+                    " L " +
+                    x +
+                    " " +
+                    (snapTopRight.y - 5)
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
                 this.canvas.paper
                   .path(
                     " M " +
-                      (x - 10) +
-                      " " +
-                      (snapBottomRight.y + 5) +
-                      " L " +
-                      (x - 5) +
-                      " " +
-                      snapBottomRight.y +
-                      " L " +
-                      x +
-                      " " +
-                      (snapBottomRight.y + 5)
+                    (x - 10) +
+                    " " +
+                    (snapBottomRight.y + 5) +
+                    " L " +
+                    (x - 5) +
+                    " " +
+                    snapBottomRight.y +
+                    " L " +
+                    x +
+                    " " +
+                    (snapBottomRight.y + 5)
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
                 this.canvas.paper
                   .path(
                     " M " +
-                      (x - 10) +
-                      " " +
-                      (constraint.bottomSide.y - 5) +
-                      " L " +
-                      (x - 5) +
-                      " " +
-                      constraint.bottomSide.y +
-                      " L " +
-                      x +
-                      " " +
-                      (constraint.bottomSide.y - 5)
+                    (x - 10) +
+                    " " +
+                    (constraint.bottomSide.y - 5) +
+                    " L " +
+                    (x - 5) +
+                    " " +
+                    constraint.bottomSide.y +
+                    " L " +
+                    x +
+                    " " +
+                    (constraint.bottomSide.y - 5)
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
@@ -42139,13 +42139,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      x +
-                      " " +
-                      originalPos.y +
-                      " L " +
-                      x +
-                      " " +
-                      snappedPos.y
+                    x +
+                    " " +
+                    originalPos.y +
+                    " L " +
+                    x +
+                    " " +
+                    snappedPos.y
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
@@ -42194,13 +42194,13 @@ OTHER DEALINGS IN THE SOFTWARE.
                 this.canvas.paper
                   .path(
                     "M " +
-                      originalPos.x +
-                      " " +
-                      y +
-                      " L " +
-                      snappedPos.x +
-                      " " +
-                      y
+                    originalPos.x +
+                    " " +
+                    y +
+                    " L " +
+                    snappedPos.x +
+                    " " +
+                    y
                   )
                   .attr({ stroke: this.lineColor.rgba(), "stroke-width": 1 });
 
@@ -42442,7 +42442,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                   );
                   canvas.scrollTo(
                     this.canvas.getScrollTop() -
-                      (center.clientY - coordsAfter.y),
+                    (center.clientY - coordsAfter.y),
                     canvas.getScrollLeft() - (center.clientX - coordsAfter.x)
                   );
                 }
@@ -45229,7 +45229,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                *
                * @template
                */
-              moved: function moved(canvas, figure) {},
+              moved: function moved(canvas, figure) { },
             }
           );
 
@@ -45298,7 +45298,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 y,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
             }
           );
 
@@ -46294,14 +46294,14 @@ OTHER DEALINGS IN THE SOFTWARE.
                 canvas,
                 figure,
                 isPrimarySelection
-              ) {},
+              ) { },
 
               /**
                *
                *
                * @param {draw2d.Figure} figure the unselected figure
                */
-              onUnselect: function onUnselect(canvas, figure) {},
+              onUnselect: function onUnselect(canvas, figure) { },
             }
           );
 
@@ -48382,7 +48382,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 canvas,
                 draggedFigure,
                 hoverFigure
-              ) {},
+              ) { },
 
               /**
                *
@@ -48396,7 +48396,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 canvas,
                 draggedFigure,
                 hoverFigure
-              ) {},
+              ) { },
             }
           );
 
@@ -50040,11 +50040,11 @@ OTHER DEALINGS IN THE SOFTWARE.
 
                 this.svgNodes.transform(
                   "R" +
-                    this.rotationAngle +
-                    "T" +
-                    this.getAbsoluteX() +
-                    "," +
-                    this.getAbsoluteY()
+                  this.rotationAngle +
+                  "T" +
+                  this.getAbsoluteX() +
+                  "," +
+                  this.getAbsoluteY()
                 );
 
                 return this;
@@ -50998,7 +50998,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @template
                * @since 4.0.0
                */
-              onClick: function onClick() {},
+              onClick: function onClick() { },
 
               /**
                *
@@ -51046,26 +51046,26 @@ OTHER DEALINGS IN THE SOFTWARE.
                 set.push(
                   this.canvas.paper.path(
                     "M" +
-                      this.start.x +
-                      " " +
-                      this.start.y +
-                      "L" +
-                      this.end.x +
-                      " " +
-                      this.end.y
+                    this.start.x +
+                    " " +
+                    this.start.y +
+                    "L" +
+                    this.end.x +
+                    " " +
+                    this.end.y
                   )
                 );
                 // the main path
                 set.push(
                   this.canvas.paper.path(
                     "M" +
-                      this.start.x +
-                      " " +
-                      this.start.y +
-                      "L" +
-                      this.end.x +
-                      " " +
-                      this.end.y
+                    this.start.x +
+                    " " +
+                    this.start.y +
+                    "L" +
+                    this.end.x +
+                    " " +
+                    this.end.y
                   )
                 );
                 set.node = set.items[1].node;
@@ -51744,7 +51744,7 @@ OTHER DEALINGS IN THE SOFTWARE.
               getLength: function getLength() {
                 return Math.sqrt(
                   (this.start.x - this.end.x) * (this.start.x - this.end.x) +
-                    (this.start.y - this.end.y) * (this.start.y - this.end.y)
+                  (this.start.y - this.end.y) * (this.start.y - this.end.y)
                 );
               },
 
@@ -51839,7 +51839,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                     _packages2.default.policy.line.LineSelectionFeedbackPolicy
                   ) &&
                   policy instanceof
-                    _packages2.default.policy.figure.SelectionFeedbackPolicy
+                  _packages2.default.policy.figure.SelectionFeedbackPolicy
                 ) {
                   return; // silently
                 }
@@ -52014,10 +52014,10 @@ OTHER DEALINGS IN THE SOFTWARE.
                   } catch (exc) {
                     debug.warn(
                       "Unable to install edit policy '" +
-                        memento.policy +
-                        "' forced by " +
-                        this.NAME +
-                        ".setPersistentAttributes. Using default."
+                      memento.policy +
+                      "' forced by " +
+                      this.NAME +
+                      ".setPersistentAttributes. Using default."
                     );
                   }
                 }
@@ -52516,11 +52516,11 @@ OTHER DEALINGS IN THE SOFTWARE.
                 var target =
                   port !== null
                     ? port
-                        .getCanvas()
-                        .getBestFigure(this.getX(), this.getY(), [
-                          this,
-                          this.owner,
-                        ])
+                      .getCanvas()
+                      .getBestFigure(this.getX(), this.getY(), [
+                        this,
+                        this.owner,
+                      ])
                     : null;
 
                 // the hovering element has been changed
@@ -53549,7 +53549,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                   var p2 = segment.end;
                   result += Math.sqrt(
                     (p1.x - p2.x) * (p1.x - p2.x) +
-                      (p1.y - p2.y) * (p1.y - p2.y)
+                    (p1.y - p2.y) * (p1.y - p2.y)
                   );
                 }
                 return result;
@@ -53764,10 +53764,10 @@ OTHER DEALINGS IN THE SOFTWARE.
                   } catch (exc) {
                     debug.warn(
                       "Unable to install router '" +
-                        memento.router +
-                        "' forced by " +
-                        this.NAME +
-                        ".setPersistentAttributes. Using default"
+                      memento.router +
+                      "' forced by " +
+                      this.NAME +
+                      ".setPersistentAttributes. Using default"
                     );
                   }
                 }
@@ -56040,7 +56040,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @template
                * @since  4.7.4
                **/
-              onDrop: function onDrop(dropTarget, x, y, shiftKey, ctrlKey) {},
+              onDrop: function onDrop(dropTarget, x, y, shiftKey, ctrlKey) { },
 
               /**
                *
@@ -56062,7 +56062,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 y,
                 shiftKey,
                 ctrlKey
-              ) {},
+              ) { },
 
               /**
                *
@@ -56330,17 +56330,17 @@ OTHER DEALINGS IN THE SOFTWARE.
                 if (this.isResizeable() === true) {
                   this.svgNodes.transform(
                     "S" +
-                      this.scaleX +
-                      "," +
-                      this.scaleY +
-                      "," +
-                      this.getAbsoluteX() +
-                      "," +
-                      this.getAbsoluteY() +
-                      "t" +
-                      this.getAbsoluteX() +
-                      "," +
-                      this.getAbsoluteY()
+                    this.scaleX +
+                    "," +
+                    this.scaleY +
+                    "," +
+                    this.getAbsoluteX() +
+                    "," +
+                    this.getAbsoluteY() +
+                    "t" +
+                    this.getAbsoluteX() +
+                    "," +
+                    this.getAbsoluteY()
                   );
                 } else {
                   this.svgNodes.transform(
@@ -62808,17 +62808,17 @@ OTHER DEALINGS IN THE SOFTWARE.
                 if (this.isResizeable() === true) {
                   trans.push(
                     "T" +
-                      this.getAbsoluteX() +
-                      "," +
-                      this.getAbsoluteY() +
-                      "S" +
-                      this.scaleX +
-                      "," +
-                      this.scaleY +
-                      "," +
-                      this.getAbsoluteX() +
-                      "," +
-                      this.getAbsoluteY()
+                    this.getAbsoluteX() +
+                    "," +
+                    this.getAbsoluteY() +
+                    "S" +
+                    this.scaleX +
+                    "," +
+                    this.scaleY +
+                    "," +
+                    this.getAbsoluteX() +
+                    "," +
+                    this.getAbsoluteY()
                   );
                 } else {
                   trans.push(
@@ -71525,8 +71525,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                     }
                     figure.setPosition(x, y);
                   },
-                  bind: function bind() {},
-                  unbind: function unbind() {},
+                  bind: function bind() { },
+                  unbind: function unbind() { },
                   translate: function translate(figure, diff) {
                     figure.setPosition(figure.x + diff.x, figure.y + diff.y);
                   },
@@ -71972,8 +71972,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                   translate: function translate(figure, diff) {
                     figure.setPosition(figure.x + diff.x, figure.y + diff.y);
                   },
-                  bind: function bind() {},
-                  unbind: function unbind() {},
+                  bind: function bind() { },
+                  unbind: function unbind() { },
                   relocate: function relocate(index, target) {
                     var stroke = _this.getStroke();
                     var yPos = stroke + _this.padding.top;
@@ -72423,7 +72423,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                   (0, _extend2.default)({}, getter)
                 );
 
-                this.resizeListener = function (figure) {};
+                this.resizeListener = function (figure) { };
                 // install default selection handler. Can be overridden or replaced
                 this.installEditPolicy(
                   new _packages2.default.policy.figure.RectangleSelectionFeedbackPolicy()
@@ -72636,7 +72636,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 getMinWidth: function getMinWidth() {
                   return 1;
                 },
-                off: function off() {},
+                off: function off() { },
               },
               /**
                * Create a new instance
@@ -72677,8 +72677,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                       var w = Math.max(
                         figure.getMinWidth(),
                         layout.w -
-                          (layout.padding.left + layout.padding.right) +
-                          widthOffset
+                        (layout.padding.left + layout.padding.right) +
+                        widthOffset
                       );
                       var h = Math.max(
                         figure.getMinHeight(),
@@ -72699,7 +72699,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                               (height +
                                 layout.padding.top +
                                 layout.padding.bottom)) /
-                              2;
+                            2;
                           break;
                         case "bottom":
                           y =
@@ -72721,7 +72721,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                               (width +
                                 layout.padding.left +
                                 layout.padding.right)) /
-                              2 +
+                            2 +
                             widthOffset / 2;
                           break;
                         case "right":
@@ -72737,8 +72737,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                     }
                     figure.setPosition(x, y);
                   },
-                  bind: function bind() {},
-                  unbind: function unbind() {},
+                  bind: function bind() { },
+                  unbind: function unbind() { },
                   translate: function translate(figure, diff) {
                     figure.setPosition(figure.x + diff.x, figure.y + diff.y);
                   },
@@ -73168,14 +73168,14 @@ OTHER DEALINGS IN THE SOFTWARE.
                     layoutHeights[row] = Math.max(
                       layoutHeights[row],
                       figure.getMinHeight() +
-                        layout.padding.top +
-                        layout.padding.bottom
+                      layout.padding.top +
+                      layout.padding.bottom
                     );
                     layoutWidths[_column] = Math.max(
                       layoutWidths[_column],
                       figure.getMinWidth() +
-                        layout.padding.left +
-                        layout.padding.right
+                      layout.padding.left +
+                      layout.padding.right
                     );
                   }
                 });
@@ -73290,8 +73290,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                   translate: function translate(figure, diff) {
                     figure.setPosition(figure.x + diff.x, figure.y + diff.y);
                   },
-                  bind: function bind() {},
-                  unbind: function unbind() {},
+                  bind: function bind() { },
+                  unbind: function unbind() { },
                   relocate: function relocate(index, target) {
                     var stroke = _this.getStroke();
                     var yPos = stroke + _this.padding.top; // respect the border and padding of the shape
@@ -73851,7 +73851,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                   )
                 );
                 this.port.setVisible(false);
-                this.port.setVisible = function () {};
+                this.port.setVisible = function () { };
 
                 this.setConnectionDirStrategy(0);
               },
@@ -74583,7 +74583,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @param {draw2d.Port} relatedPort
                * @template
                */
-              onPortValueChanged: function onPortValueChanged(relatedPort) {},
+              onPortValueChanged: function onPortValueChanged(relatedPort) { },
 
               /**
                * @private
@@ -76190,7 +76190,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                * @param {Number} value The new value of the slider in percentage [0..100]
                * @template
                */
-              onValueChange: function onValueChange(value) {},
+              onValueChange: function onValueChange(value) { },
 
               /**
                *
@@ -76463,9 +76463,9 @@ OTHER DEALINGS IN THE SOFTWARE.
                 // register some default listener and override this with the handover one
                 this.configuration = extend(
                   {
-                    onCommit: function onCommit() {},
-                    onCancel: function onCancel() {},
-                    onStart: function onStart() {},
+                    onCommit: function onCommit() { },
+                    onCancel: function onCancel() { },
+                    onStart: function onStart() { },
                     text: "Value",
                   },
                   attr
@@ -76557,9 +76557,9 @@ OTHER DEALINGS IN THE SOFTWARE.
                 // register some default listener and override this with the handover one
                 this.listener = extend(
                   {
-                    onCommit: function onCommit() {},
-                    onCancel: function onCancel() {},
-                    onStart: function onStart() {},
+                    onCommit: function onCommit() { },
+                    onCancel: function onCancel() { },
+                    onStart: function onStart() { },
                   },
                   listener
                 );
@@ -77312,7 +77312,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
               var output = [];
 
-              for (var i = 0; i < input.length; ) {
+              for (var i = 0; i < input.length;) {
                 var byte1 = charToByteMap[input.charAt(i++)];
 
                 var haveByte2 = i < input.length;
@@ -77420,16 +77420,16 @@ OTHER DEALINGS IN THE SOFTWARE.
           var _typeof =
             typeof Symbol === "function" && typeof Symbol.iterator === "symbol"
               ? function (obj) {
-                  return typeof obj;
-                }
+                return typeof obj;
+              }
               : function (obj) {
-                  return obj &&
-                    typeof Symbol === "function" &&
-                    obj.constructor === Symbol &&
-                    obj !== Symbol.prototype
-                    ? "symbol"
-                    : typeof obj;
-                };
+                return obj &&
+                  typeof Symbol === "function" &&
+                  obj.constructor === Symbol &&
+                  obj !== Symbol.prototype
+                  ? "symbol"
+                  : typeof obj;
+              };
 
           var _packages = __webpack_require__(
             /*! ../packages */ "./src/packages.js"
@@ -77495,7 +77495,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 // JSON struct of {red:###, green:###, blue:### }
                 else if (
                   (typeof red === "undefined" ? "undefined" : _typeof(red)) ===
-                    "object" &&
+                  "object" &&
                   typeof red.red === "number"
                 ) {
                   this.red = red.red;
@@ -77513,7 +77513,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                 // array detection 2
                 else if (
                   (typeof red === "undefined" ? "undefined" : _typeof(red)) ===
-                    "object" &&
+                  "object" &&
                   typeof red.length === "number" &&
                   red.length === 3
                 ) {
@@ -78035,8 +78035,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                   con.firebug
                     ? con[level].apply(window, args)
                     : con[level]
-                    ? con[level](args)
-                    : con.log(args);
+                      ? con[level](args)
+                      : con.log(args);
                 };
               })(idx, log_methods[idx]);
             }
@@ -78415,7 +78415,7 @@ OTHER DEALINGS IN THE SOFTWARE.
                     if (
                       deep &&
                       Object.prototype.toString.call(obj[prop]) ===
-                        "[object Object]"
+                      "[object Object]"
                     ) {
                       extended[prop] = extend(true, extended[prop], obj[prop]);
                     } else {
@@ -78736,7 +78736,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
               /**
                */
-              init: function init() {},
+              init: function init() { },
 
               /**
                * Create a spline based on the given control points.

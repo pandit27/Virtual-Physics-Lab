@@ -20,55 +20,100 @@
     <link rel="stylesheet" href="css/information-section.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+
+    </style>
 </head>
 
 <body>
     <!-- navbar -->
-    <header class="h-auto my-auto fle header-virtual text-gray-50 bg-black body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <img src="https://cdn.pixabay.com/photo/2021/07/20/12/10/atom-6480540__340.jpg" alt="image"
-                    class="w-15 h-16 text-white p-2 rounded-full cursor-pointer">
-                <span class="ml-3 text-gray-50 cursor-pointer text-xl">Virtual Physics Lab</span>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center">
+                <img src="https://cdn.pixabay.com/photo/2021/07/20/12/10/atom-6480540__340.jpg"
+                    class="w-15 h-16 text-white p-2 rounded-full cursor-pointer" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Virtual Physics
+                    Lab</span>
             </a>
-            <nav
-                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 text-xl hover:text-blue-400 cursor-pointer home-nav">Home</a>
-                <a class="mr-5 text-xl hover:text-blue-400 cursor-pointer circuit-simulation-nav">Circuit Simulation</a>
-                <a href="/index.html#resource"
-                    class="mr-5 text-xl hover:text-blue-400 cursor-pointer resources-nav">Resources</a>
-                <a href="src/about-nav.html" class="mr-5 text-xl hover:text-blue-400 cursor-pointer about-nav">About</a>
-                <div>
-                    <button type="button"
-                        class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm ml-9 mt-1 px-5 py-2.5 mr-2 mb-2 my-login-button">Login</button>
-                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm mt-1 px-5 py-2.5 mr-2 mb-2 my-signup-button
-                    '">Sign
-                        Up</button>
-                </div>
-            </nav>
-            <!-- search bar -->
-            <form class="flex justify-center m-auto">
-                <label for="default-search"
-                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                <div class="relative">
+            <div class="flex md:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                    aria-expanded="false"
+                    class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </button>
+                <div class="relative hidden md:block">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="sr-only">Search icon</span>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search...">
+                </div>
+                <button data-collapse-toggle="navbar-search" type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-search" aria-expanded="false">
+                    <span class="sr-only">Open menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                <div class="relative mt-3 md:hidden">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                clip-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
-                        <input type="search" id="default-search"
-                            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Search" required>
-                        <button type="submit"
-                            class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
-                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search...">
                 </div>
-            </form>
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a
+                            class="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 cursor-pointer home-nav">Home</a>
+
+                    </li>
+                    <li>
+                        <a href="src/about-nav.html"
+                            class="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 about-nav">About</a>
+                    </li>
+                    <li>
+                        <a
+                            class="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 cursor-pointer circuit-simulation-nav">Circuit
+                            Simulation</a>
+
+                    </li>
+                    <li>
+                        <a href="/index.html#resource:~:text=Electric%20Circuit%20Simulator"
+                            class="block text-xl py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 resources-nav">Resources</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
+
+
 
 
 
@@ -125,9 +170,10 @@
                         <img class="h-40 rounded w-full object-cover object-center mb-6"
                             src="https://cdn.pixabay.com/photo/2022/05/16/03/51/metaverse-7199393__340.jpg"
                             alt="content">
-                        <h2 class="my-h2-c-1 text-lg title-font mb-4"><a href="">Documentation</a></h2>
-                        <p class="leading-relaxed text-base text-gray-50">This feature provides information about
-                            electronic circuits and different electricity laws.</p>
+                        <h2 class="my-h2-c-1 text-lg title-font mb-4"><a href="src/documentation.html">Documentation</a>
+                        </h2>
+                        <p class="leading-relaxed text-base text-gray-50">This provides the documentation of our
+                            website. You can read it to get an idea about how to use this webiste.</p>
                         <button class="w-full p-2 mt-2 text-gray-50 first-section-button"
                             id="documentation-first-section">Documentation</button>
                     </div>
@@ -230,7 +276,7 @@
 
 
     <!-- tutorial section -->
-    <p class="tutorial-para" id="tutorial">Tutorials</p>
+    <!-- <p class="tutorial-para" id="tutorial">Tutorials</p>
     <div class="holder mx-auto w-full grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 tutorial-section">
         <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
             <a href="https://www.youtube.com/watch?v=AOADrgWdzrU&ab_channel=Scholarswing" target="_blank"><img
@@ -243,9 +289,9 @@
                 <span class="description text-sm block py-2 border-gray-400 mb-2">lorem ipsum bekhum bukhum !lorem ipsum
                     bekhum bukhum !</span>
             </div>
-        </div>
-        <!-- each -->
-        <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
+        </div> -->
+    <!-- each -->
+    <!-- <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
             <a href="https://www.youtube.com/watch?v=AOADrgWdzrU&ab_channel=Scholarswing" target="_blank"><img
                     class="w-full" src="images/tutorial video ohm's law.jpg" alt="" class="t-1 cursor-pointer" /></a>
             <div class="desc p-4 text-gray-800">
@@ -256,9 +302,9 @@
                 <span class="description text-sm block py-2 border-gray-400 mb-2">lorem ipsum bekhum bukhum !lorem ipsum
                     bekhum bukhum !</span>
             </div>
-        </div>
-        <!-- each -->
-        <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
+        </div> -->
+    <!-- each -->
+    <!-- <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
             <a href="https://www.youtube.com/watch?v=AOADrgWdzrU&ab_channel=Scholarswing" target="_blank"><img
                     class="w-full" src="images/tutorial video ohm's law.jpg" alt="" class="t-1 cursor-pointer" /></a>
             <div class="desc p-4 text-gray-800">
@@ -269,9 +315,9 @@
                 <span class="description text-sm block py-2 border-gray-400 mb-2">lorem ipsum bekhum bukhum !lorem ipsum
                     bekhum bukhum !</span>
             </div>
-        </div>
-        <!-- each -->
-        <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
+        </div> -->
+    <!-- each -->
+    <!-- <div class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative">
             <a href="https://www.youtube.com/watch?v=AOADrgWdzrU&ab_channel=Scholarswing" target="_blank"><img
                     class="w-full " src="images/tutorial video ohm's law.jpg" alt="" class="t-1 cursor-pointer" /></a>
             <div class="desc p-4 text-gray-800">
@@ -282,9 +328,9 @@
                 <span class="description text-sm block py-2 border-gray-400 mb-2">lorem ipsum bekhum bukhum !lorem ipsum
                     bekhum bukhum !</span>
             </div>
-        </div>
-        <!-- each -->
-    </div>
+        </div> -->
+    <!-- each -->
+    <!-- </div> -->
 
 
     <!-- footer -->
@@ -343,11 +389,12 @@
                                 class="text-gray-50 hover:text-gray-400 cursor-pointer">Resources</a>
                         </li>
                         <li>
-                            <a href="index.html#tutorial"
+                            <a href="src/tutorial.html"
                                 class="text-gray-50 hover:text-gray-400 cursor-pointer">Tutorials</a>
                         </li>
                         <li>
-                            <a class="text-gray-50 hover:text-gray-400 cursor-pointer">Documentation</a>
+                            <a href="src/documentation.html"
+                                class="text-gray-50 hover:text-gray-400 cursor-pointer">Documentation</a>
                         </li>
                         <li>
                             <a href="src/blog.html" class="text-gray-50 hover:text-gray-400 cursor-pointer">Blogs</a>
@@ -426,6 +473,10 @@
     <script src="javacscript/navbar.js"></script>
     <!-- first-section js -->
     <script src="javacscript/first-section.js"></script>
+    <!-- documentation js -->
+    <script src="/javacscript/documentation.js"></script>
+    <!-- tailwind js - flowbite -->
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
 </body>
 
 </html>
