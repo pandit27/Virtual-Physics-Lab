@@ -13,7 +13,7 @@ Our site is live at https://andc-lab.netlify.app/
 <strong>MERN Stack</strong>
 <ol>
 <li>Tailwind CSS => for designing the UI/UX</li>
-<li>React js => for creating the software (especilly circuit simulator)</li>
+<li>React js => for creating the software (especially circuit simulator)</li>
 <li>Node js => for creating a server for this software</li>
 <li>Express js => for doing all the stuff in backend</li>
 <li>MongoDB => for creating a database (if required)</li>
