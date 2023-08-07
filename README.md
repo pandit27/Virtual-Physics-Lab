@@ -42,9 +42,9 @@ Cost = Rs 2,15,000
 # 👥 Contributors :-
 
 <ol>
+<li>Priyanshu Jha</li>
 <li>Nikhil Kumar</li>
 <li>Vipin Kumar</li>
-<li>Priyanshu Jha</li>
 </ol>
 
 <h3>Project Completed 👍</h3>
