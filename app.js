@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 const pathfile = path.join(__dirname);
 
 app.get('/', (req, res) => {
-    res.send(`${__dirname}/index.html`);
+    res.send(`${pathfile}/index.html`);
 });
 
 const port = process.env.PORT || 4000;
