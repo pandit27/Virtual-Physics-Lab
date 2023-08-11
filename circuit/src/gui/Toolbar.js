@@ -90,16 +90,7 @@ example.Toolbar = Class.extend({
   onSelectionChanged: function (emitter, event) {
     this.deleteButton.button("option", "disabled", event.figure === null);
   },
-
-  /**
-   * @method
-   * Sent when an event occurs on the command stack. draw2d.command.CommandStackEvent.getDetail()
-   * can be used to identify the type of event which has occurred.
-   *
-   * @template
-   *
-   * @param {draw2d.command.CommandStackEvent} event
-   **/
+
   stackChanged: function (event) {
     this.undoButton.button("option", "disabled", !event.getStack().canUndo());
     this.redoButton.button("option", "disabled", !event.getStack().canRedo());
