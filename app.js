@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 const pathfile = path.join(__dirname);
