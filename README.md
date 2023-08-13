@@ -17,6 +17,7 @@ Our site is live at https://andc-lab.netlify.app/
 <li>Node js => for creating a server for this software</li>
 <li>Express js => for doing all the stuff in backend</li>
 <li>MongoDB => for creating a database (if required)</li>
+<li>Firebase => Will use it to store user data</lo>
 </ol>
 
 
