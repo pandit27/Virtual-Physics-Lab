@@ -57,8 +57,6 @@ If you'd like to contribute code, follow these steps:
 4. Push to your forked repository: `git push origin main`.
 5. Open a pull request against the `main` branch of the original repository.
 
-<br>
-
 # 👥 Contributors :-
 
 <ol>
