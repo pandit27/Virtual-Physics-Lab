@@ -41,7 +41,23 @@ Cost = Rs 2,15,000
 </ol>
 
 # 🤝🏻 Contribution :-
-<p>You're welcome to contribute to our Project. Simply clone th
+<p>We welcome contributions from the community! Whether you're an experienced developer or just getting started, there are many ways you can contribute to this project.</p><br>
+
+**Bug Reports and Feature Requests**
+
+If you come across a bug or have an idea for a new feature, please [open an issue](https://github.com/astrodeveloper1010/virtual-physics-lab/issues) on GitHub. Be sure to provide as much detail as possible, including steps to reproduce the issue or a clear description of the feature you're suggesting.
+
+**Pull Requests**
+
+If you'd like to contribute code, follow these steps:
+
+1. Fork the repository and create a new branch: `git checkout -b feature-name`.
+2. Make your changes and ensure they're well-tested.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to your forked repository: `git push origin main`.
+5. Open a pull request against the `main` branch of the original repository.
+
+<br>
 
 # 👥 Contributors :-
 
