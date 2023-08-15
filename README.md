@@ -45,7 +45,7 @@ Cost = Rs 2,15,000
 
 **Bug Reports and Feature Requests**
 
-If you come across a bug or have an idea for a new feature, please [open an issue](https://github.com/astrodeveloper1010/virtual-physics-lab/issues) on GitHub. Be sure to provide as much detail as possible, including steps to reproduce the issue or a clear description of the feature you're suggesting.
+If you come across a bug or have an idea for a new feature, please [open an issue](https://github.com/AstroDeveloper1010/Virtual-Physics-Lab/issues) on GitHub. Be sure to provide as much detail as possible, including steps to reproduce the issue or a clear description of the feature you're suggesting.
 
 **Pull Requests**
 
