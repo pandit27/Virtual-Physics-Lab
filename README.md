@@ -69,8 +69,6 @@ If you'd like to contribute code, follow these steps:
 
 <h3>Project Completed 👍</h3>
 
-<br>
-
 # 📃 Certificate :-
 
 <center><h2>ACHARYA NARENDRA DEV COLLEGE</h2></center>
